@@ -24,7 +24,8 @@ const CoCreatePassAttributes = {
 	},
 
 	_setAttributeValues: function(el, attrValues) {
-		const isRefresh = el.hasAttribute('pass-refresh') ? true : false;
+		// const isRefresh = el.hasAttribute('pass-refresh') ? true : false;
+		const isRefresh = el.getAttribute('pass-refresh') || true;
 
 		Object.keys(attrValues).forEach(key => {
 			let attName = key.replace("'", '').replace("'", '');
