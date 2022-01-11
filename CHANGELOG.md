@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.0.1...v1.1.0) (2022-01-11)
+
+
+### Features
+
+* pass attributes will update elements attributes. set pass-refres='false' if you require the element to get pass attributes once ([e250692](https://github.com/CoCreate-app/CoCreate-pass/commit/e2506920bbeaad870d72dbe150bd71dbe97089e3))
+
 ## [1.0.1](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.0.0...v1.0.1) (2022-01-02)
 
 
