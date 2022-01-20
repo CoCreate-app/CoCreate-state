@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.1.0...v1.1.1) (2022-01-20)
+
+
+### Bug Fixes
+
+* pass-refresh required to update attributes that have already been passed a value ([6a93e48](https://github.com/CoCreate-app/CoCreate-pass/commit/6a93e4842f28a3f74b97999a5c43acedf9d7787f))
+
 # [1.1.0](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.0.1...v1.1.0) (2022-01-11)
 
 
