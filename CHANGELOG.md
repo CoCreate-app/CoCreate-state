@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.1.1...v1.1.2) (2022-01-20)
+
+
+### Bug Fixes
+
+* isRefresh variable update to let ([050685d](https://github.com/CoCreate-app/CoCreate-pass/commit/050685d1a32781e08ee0c3a8a6dfd8e67fdc53ba))
+
 ## [1.1.1](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.1.0...v1.1.1) (2022-01-20)
 
 
