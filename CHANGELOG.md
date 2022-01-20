@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.1.2...v1.1.3) (2022-01-20)
+
+
+### Bug Fixes
+
+* pass-refresh if and else improved ([22cfbee](https://github.com/CoCreate-app/CoCreate-pass/commit/22cfbee6c350be3d34f8acb627094d1e01e020a0))
+
 ## [1.1.2](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.1.1...v1.1.2) (2022-01-20)
 
 
