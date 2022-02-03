@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.1.4...v1.1.5) (2022-02-03)
+
+
+### Bug Fixes
+
+* replaced show and hide class hidden with attribute hidden ([40cfe47](https://github.com/CoCreate-app/CoCreate-pass/commit/40cfe4770b12dce3986b27c37791b59743b9e48c))
+
 ## [1.1.4](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.1.3...v1.1.4) (2022-02-01)
 
 
