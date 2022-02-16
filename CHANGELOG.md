@@ -1,3 +1,10 @@
+## [1.1.9](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.1.8...v1.1.9) (2022-02-16)
+
+
+### Bug Fixes
+
+* update dependencies ([1817634](https://github.com/CoCreate-app/CoCreate-pass/commit/1817634dcc62dbb8ebbb1a92710d759ac3dfb7a1))
+
 ## [1.1.8](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.1.7...v1.1.8) (2022-02-16)
 
 
