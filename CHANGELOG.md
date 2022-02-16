@@ -1,3 +1,10 @@
+## [1.1.8](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.1.7...v1.1.8) (2022-02-16)
+
+
+### Bug Fixes
+
+* update action param to name ([8411f1e](https://github.com/CoCreate-app/CoCreate-pass/commit/8411f1e25b1dc5a2adc5de54b323321af3dff7a2))
+
 ## [1.1.7](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.1.6...v1.1.7) (2022-02-10)
 
 
