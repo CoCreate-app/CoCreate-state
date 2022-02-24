@@ -1,3 +1,10 @@
+## [1.1.10](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.1.9...v1.1.10) (2022-02-24)
+
+
+### Bug Fixes
+
+* CoCreate.config replace CoCreate.app with * ([84312bc](https://github.com/CoCreate-app/CoCreate-pass/commit/84312bc363b983e8c87d33617cc429545e5adac4))
+
 ## [1.1.9](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.1.8...v1.1.9) (2022-02-16)
 
 
