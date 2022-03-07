@@ -1,3 +1,10 @@
+## [1.1.11](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.1.10...v1.1.11) (2022-03-07)
+
+
+### Bug Fixes
+
+* pass-refresh attribute with no value = true ([fcf5ea4](https://github.com/CoCreate-app/CoCreate-pass/commit/fcf5ea488618dbf3ce518ea4daa89793ad6304b2))
+
 ## [1.1.10](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.1.9...v1.1.10) (2022-02-24)
 
 
