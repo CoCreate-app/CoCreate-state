@@ -1,3 +1,10 @@
+## [1.1.12](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.1.11...v1.1.12) (2022-05-06)
+
+
+### Bug Fixes
+
+* update config organization_Id to organization_id ([90d4e56](https://github.com/CoCreate-app/CoCreate-pass/commit/90d4e5625702a6208996bd808ae98c6689b5703a))
+
 ## [1.1.11](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.1.10...v1.1.11) (2022-03-07)
 
 
