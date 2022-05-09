@@ -1,3 +1,10 @@
+## [1.1.13](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.1.12...v1.1.13) (2022-05-09)
+
+
+### Bug Fixes
+
+* remove adminUI_id and builderUI_id ([72bb7fb](https://github.com/CoCreate-app/CoCreate-pass/commit/72bb7fb887b0dced2af13f6a40ececf24169b099))
+
 ## [1.1.12](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.1.11...v1.1.12) (2022-05-06)
 
 
