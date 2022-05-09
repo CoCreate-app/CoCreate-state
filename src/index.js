@@ -16,13 +16,8 @@ function init() {
 function __initPassSessionIds() {
 	let orgId = window.localStorage.getItem('organization_id');
 	let user_id = window.localStorage.getItem('user_id');
-	let adminUI_id = window.localStorage.getItem('adminUI_id');
-	let builderUI_id = window.localStorage.getItem('builderUI_id');
-
 	__initPassItems(orgId, ".sessionOrg_Id", true);
 	__initPassItems(user_id, ".sessionUser_Id");
-	__initPassItems(adminUI_id, ".sessionAdminUI_Id");
-	__initPassItems(builderUI_id, ".sessionBuilderUI_Id");
 }
 
 // ToDo: can be depreciateddo to component localStorage
