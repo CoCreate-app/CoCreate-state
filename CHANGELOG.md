@@ -1,3 +1,10 @@
+## [1.1.15](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.1.14...v1.1.15) (2022-05-22)
+
+
+### Bug Fixes
+
+* add an if condition if refresh false ([a4c7d9c](https://github.com/CoCreate-app/CoCreate-pass/commit/a4c7d9c50de8c9ffc22265bd4cc066d53beb224b))
+
 ## [1.1.14](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.1.13...v1.1.14) (2022-05-19)
 
 
