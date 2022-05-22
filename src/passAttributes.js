@@ -25,7 +25,7 @@ const CoCreatePassAttributes = {
 
 	_setAttributeValues: function(el, attrValues) {
 		let isRefresh = el.getAttribute('pass-refresh') || el.hasAttribute('pass-refresh');
-		if (isRefresh === 'false' || isRefresh === null || isRefresh === undefined)
+		if (isRefresh === 'false' || isRefresh === false || isRefresh === null || isRefresh === undefined)
 			isRefresh = false;
 		else
 			isRefresh = true;
