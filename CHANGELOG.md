@@ -1,3 +1,10 @@
+## [1.1.17](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.1.16...v1.1.17) (2022-05-31)
+
+
+### Bug Fixes
+
+* renamed passValue init functions to initPassValue ([b2d88ad](https://github.com/CoCreate-app/CoCreate-pass/commit/b2d88adecc69a26d36175a2f24437dc85ca1cebf))
+
 ## [1.1.16](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.1.15...v1.1.16) (2022-05-23)
 
 
