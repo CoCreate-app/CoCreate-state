@@ -1,16 +1,16 @@
 const CoCreatePassValues = {
 
-	init: function() {
+	initPassValue: function() {
 		var elements = document.querySelectorAll('[pass-value_id]');
-		this.initElements(elements);
+		this.initPassValueElements(elements);
 	},
 
-	initElements: function(elements) {
+	initPassValueElements: function(elements) {
 		for (let element of elements)
-			this.initElement(element);
+			this.initPassValueElement(element);
 	},
 
-	initElement: function(element) {
+	initPassValueElement: function(element) {
 		let pass_value_id = element.getAttribute('pass-value_id');
 
 		if(!pass_value_id) return;
@@ -58,7 +58,7 @@ const CoCreatePassValues = {
 			window.localStorage.setItem('passedValues', JSON.stringify(passedValues));
 		}
 
-		this.init()
+		this.initPassValue()
 
 		// Todo: replace with custom event system
 		document.dispatchEvent(new CustomEvent('passValueActionEnd', {
@@ -71,6 +71,6 @@ const CoCreatePassValues = {
 	},
 }
 
-CoCreatePassValues.init();
+CoCreatePassValues.initPassValue();
 
 export default CoCreatePassValues;
