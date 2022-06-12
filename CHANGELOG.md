@@ -1,3 +1,11 @@
+## [1.1.18](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.1.17...v1.1.18) (2022-06-12)
+
+
+### Bug Fixes
+
+* update dependencies ([d0da67e](https://github.com/CoCreate-app/CoCreate-pass/commit/d0da67e3ebffeb00f6b72686fbf3da77c8efb3ed))
+* update docs css document_id ([bce0783](https://github.com/CoCreate-app/CoCreate-pass/commit/bce0783263281373f3b9dd7fad90eaf578878b68))
+
 ## [1.1.17](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.1.16...v1.1.17) (2022-05-31)
 
 
