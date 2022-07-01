@@ -3,6 +3,11 @@ const CoCreatePassAttributes = {
 	init: function() {
 		var elements = document.querySelectorAll('[pass_id]');
 		this.initElements(elements);
+		self = this;
+		window.addEventListener('storage', function(e) {
+			elements = document.querySelectorAll('[pass_id]')
+			self.initElements(elements)
+		});
 	},
 
 	initElements: function(elements) {
@@ -15,6 +20,7 @@ const CoCreatePassAttributes = {
 		if (!pass_id) return;
 
 		let passedAttributes = window.localStorage.getItem('passedAttributes');
+		
 		passedAttributes = JSON.parse(passedAttributes);
 		if (!passedAttributes || passedAttributes.length == 0) return;
 		
@@ -22,6 +28,15 @@ const CoCreatePassAttributes = {
 		if (!attrValues) return;
 		this._setAttributeValues(element, attrValues);
 	},
+
+	// localStorageObject: function(passedAttributes) {
+	// 	passedAttributes = JSON.parse(passedAttributes);
+	// 	if (!passedAttributes || passedAttributes.length == 0) return;
+		
+	// 	let attrValues = passedAttributes[`'${pass_id}'`];
+	// 	if (!attrValues) return;
+	// 	return attrValues;
+	// },
 
 	_setAttributeValues: function(el, attrValues) {
 		let isRefresh = el.getAttribute('pass-refresh') || el.hasAttribute('pass-refresh');
@@ -60,7 +75,10 @@ const CoCreatePassAttributes = {
 			// }
 			if (element.hasAttribute(attrname)) {
 				if (!element.getAttribute(attrname) || isRefresh)
-					element.setAttribute(attrname, value);
+					if (attrname == 'value' && element.value != undefined)
+						element.value = value;
+					else
+						element.setAttribute(attrname, value);
 			}
 		}
 	},
