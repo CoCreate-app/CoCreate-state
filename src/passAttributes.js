@@ -5,8 +5,10 @@ const CoCreatePassAttributes = {
 		this.initElements(elements);
 		self = this;
 		window.addEventListener('storage', function(e) {
-			elements = document.querySelectorAll('[pass_id]')
-			self.initElements(elements)
+			if (e.key == 'passedAttributes') {
+				elements = document.querySelectorAll('[pass_id]')
+				self.initElements(elements)
+			}
 		});
 	},
 

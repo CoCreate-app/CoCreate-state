@@ -43,8 +43,16 @@ observer.init({
 });
 
 action.init({
-	name: "passValueAction",
-	endEvent: "passValueActionEnd",
+	name: "passAttributes",
+	endEvent: "passAttributesEnd",
+	callback: (btn, data) => {
+		CoCreatePass._setPassAttributes(btn);
+	},
+});
+
+action.init({
+	name: "passValues",
+	endEvent: "passValuesEnd",
 	callback: (btn, data) => {
 		CoCreatePass.passValueAction(btn);
 	},
