@@ -1,3 +1,17 @@
+# [1.2.0](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.1.19...v1.2.0) (2022-07-03)
+
+
+### Bug Fixes
+
+* add demo to test using  an iframe to pass values to local storage from another org ([3fcddad](https://github.com/CoCreate-app/CoCreate-pass/commit/3fcddad9b42bf9267dde2424eac4f06383b9b502))
+* add storage eventListener to update elements when the llocal storage value changes ([6a7ddf4](https://github.com/CoCreate-app/CoCreate-pass/commit/6a7ddf40cf412d999d3673ec59927e6044bfe78c))
+* update pass-fetch and pass-filter attributes ([bf60f0e](https://github.com/CoCreate-app/CoCreate-pass/commit/bf60f0ef0156bd0c800849582d904cb3a0928b51))
+
+
+### Features
+
+* passAttribute action, storage eventlistener checks key ([42a76ae](https://github.com/CoCreate-app/CoCreate-pass/commit/42a76aef577a7e76bbccd71154ed640d6f1f33d7))
+
 ## [1.1.19](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.1.18...v1.1.19) (2022-06-18)
 
 
