@@ -1,3 +1,10 @@
+## [1.2.14](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.2.13...v1.2.14) (2022-11-21)
+
+
+### Bug Fixes
+
+* @cocreate/docs bug fix ([9895fe3](https://github.com/CoCreate-app/CoCreate-pass/commit/9895fe302c176a1c0dded59c0438446ea6f73ca6))
+
 ## [1.2.13](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.2.12...v1.2.13) (2022-11-21)
 
 
