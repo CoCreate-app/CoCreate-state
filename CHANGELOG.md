@@ -1,3 +1,10 @@
+## [1.2.13](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.2.12...v1.2.13) (2022-11-21)
+
+
+### Bug Fixes
+
+* replaced document_id with document._id ([54d19bb](https://github.com/CoCreate-app/CoCreate-pass/commit/54d19bb4d22bf190ba7a1c9d3985b10a446a8c38))
+
 ## [1.2.12](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.2.11...v1.2.12) (2022-11-21)
 
 
