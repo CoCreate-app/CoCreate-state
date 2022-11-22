@@ -1,3 +1,10 @@
+## [1.2.15](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.2.14...v1.2.15) (2022-11-22)
+
+
+### Bug Fixes
+
+* apply src: {{source}} to CoCreate.config ([1fdb207](https://github.com/CoCreate-app/CoCreate-pass/commit/1fdb2077be0ccd6505b47e5cf6bf51368b381f6a))
+
 ## [1.2.14](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.2.13...v1.2.14) (2022-11-21)
 
 
