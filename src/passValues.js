@@ -22,7 +22,7 @@ const CoCreatePassValues = {
 	initPassValueElement: function(element) {
 		let pass_value_id = element.getAttribute('pass-value_id');
 
-		if(!pass_value_id) return;
+		if (!pass_value_id) return;
 		
 		let passedValues = window.localStorage.getItem('passedValues');
 		passedValues = JSON.parse(passedValues );
