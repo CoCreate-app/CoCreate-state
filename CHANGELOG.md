@@ -1,3 +1,10 @@
+## [1.2.32](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.2.31...v1.2.32) (2022-12-13)
+
+
+### Bug Fixes
+
+* removed un used devDependencies ([be773b8](https://github.com/CoCreate-app/CoCreate-pass/commit/be773b89bb0482ec986b1fd03bcd15efe6db7153))
+
 ## [1.2.31](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.2.30...v1.2.31) (2022-12-13)
 
 
