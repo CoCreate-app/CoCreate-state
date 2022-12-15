@@ -1,3 +1,10 @@
+## [1.2.33](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.2.32...v1.2.33) (2022-12-15)
+
+
+### Bug Fixes
+
+* add missing dev dependency style-loader ([8bd5606](https://github.com/CoCreate-app/CoCreate-pass/commit/8bd5606c02ab36ae0d129a4f7ffc39075d44bc75))
+
 ## [1.2.32](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.2.31...v1.2.32) (2022-12-13)
 
 
