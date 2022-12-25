@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.2.38...v1.3.0) (2022-12-25)
+
+
+### Bug Fixes
+
+* bump dependencies ([64357f2](https://github.com/CoCreate-app/CoCreate-pass/commit/64357f29a4e9d87f47ab5d0c08bdb8b7961712e4))
+
+
+### Features
+
+* pass_to and pass_id now supports values, depreciated pass-value_to and pass-value_id ([7c74077](https://github.com/CoCreate-app/CoCreate-pass/commit/7c74077ad6b0bb7f50d80a32d68cfcabe070196a))
+
 ## [1.2.38](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.2.37...v1.2.38) (2022-12-23)
 
 
