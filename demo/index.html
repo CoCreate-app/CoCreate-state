@@ -11,8 +11,8 @@
 <body style="padding:20px">
   
 	<!-- windows -->
-	<button target="modal" href="./documentation" pass-collection="modules" pass-document_id="" pass_to="me1234"  modal-width="600px" modal-height="100%" modal-color="#333">Window test.1</button>
-	<button target="modal" href="render.html" pass-collection="module_activity" pass-document_id="5cd910dd30f02f16b3385821" pass_to="me1234" modal-height="100%"  modal-color="red" modal-x="20" modal-y="40">Window test.2</button>				
+	<button actions="pass, openModal" href="./documentation" pass-collection="modules" pass-document_id="" pass_to="me1234"  modal-width="600px" modal-height="100%" modal-color="#333">Window test.1</button>
+	<button actions="pass, openModal" href="render.html" pass-collection="module_activity" pass-document_id="5cd910dd30f02f16b3385821" pass_to="me1234" modal-height="100%"  modal-color="red" modal-x="20" modal-y="40">Window test.2</button>				
   <!--Page-->
 	<button>
 	  <a href="render.html" target="" pass-collection="module_activity" pass-document_id="5d8aa1cfa37aee309596d6c6" pass_to="me1234">Page test.1.html
@@ -43,14 +43,14 @@
 	<button><a href="target.html"  target="_self" pass-collection="modules" pass-document_id="5d8aa2fca37aee309596d6c8" pass_to="me1234">_self</a></button>
 	----
 	<button><a href="html_block.html"  pass-collection="modules" pass-document_id='5cf995e8ac959a2bd93356fb' pass-prefix="" pass_to="me1234">Page HTML BLOCK</a></button>
-	<button><a target="modal" href="html_block.html"  pass-collection="modules" pass-document_id='5cf995e8ac959a2bd93356fb' pass-prefix="" pass_to="me1234">Modal HTML BLOCK</a></button>
+	<button><a actions="pass, openModal" href="html_block.html"  pass-collection="modules" pass-document_id='5cf995e8ac959a2bd93356fb' pass-prefix="" pass_to="me1234">Modal HTML BLOCK</a></button>
 	
 	<button><a href="CoCreate-builder/index.html" pass-collection='test1_collection' pass-prefix="test-prefix_" pass_to="me1234">test page builder.html</a></button>
-	<button><a target="modal" href='builder.html' pass-collection='modules' pass-document_id='5cf995e8ac959a2bd93356fb' pass-prefix="form_" pass_to="me1234">modal builder.html</a></button>
+	<button><a actions="pass, openModal" href='builder.html' pass-collection='modules' pass-document_id='5cf995e8ac959a2bd93356fb' pass-prefix="form_" pass_to="me1234">modal builder.html</a></button>
 	
-	<button><a target="modal" href='module_datatable.html' pass-collection='modules' pass-document_id='5cf995e8ac959a2bd93356fb' pass-prefix="form_" pass_to="me1234">modal datatable</a></button>
+	<button><a actions="pass, openModal" href='module_datatable.html' pass-collection='modules' pass-document_id='5cf995e8ac959a2bd93356fb' pass-prefix="form_" pass_to="me1234">modal datatable</a></button>
 	
-	<button><a target="modal" href='index.html' pass_to="me1234" modal-ajax="true">index.html</a></button>
+	<button><a actions="pass, openModal" href='index.html' pass_to="me1234" modal-ajax="true">index.html</a></button>
 
 	<div id="modal-viewport" ></div>
 	
