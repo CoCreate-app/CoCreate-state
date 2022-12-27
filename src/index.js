@@ -80,11 +80,11 @@ function _setAttributeValues (el, attrValues) {
 
 function _setAttributeValue (element, attrname, value, isRefresh) {
 	// ToDo: if (value !== undefined)???
-	if (!element.getAttribute(attrname) || isRefresh || !element.getValue()) {
+	if (!element.getAttribute(attrname) || isRefresh) {
 		if (attrname == 'value') {					
-			if (element.value != undefined)
+			if (element.value == '' || element.value && isRefresh)
 				element.value = value;
-			else
+			else if (isRefresh || !element.getValue())
 				element.setValue(value)
 		} else if (element.hasAttribute(attrname) && value)
 			element.setAttribute(attrname, value);
