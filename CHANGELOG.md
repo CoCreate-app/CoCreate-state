@@ -1,3 +1,12 @@
+## [1.3.1](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.3.0...v1.3.1) (2022-12-27)
+
+
+### Bug Fixes
+
+* bump dependecies ([323a9f7](https://github.com/CoCreate-app/CoCreate-pass/commit/323a9f7197789902488ddd1fb3aa2fc8ee1514e6))
+* bump dependencies ([5704b61](https://github.com/CoCreate-app/CoCreate-pass/commit/5704b61d2a6847b5ee99639fbbe5f6ce190affed))
+* improved handeling of pass-value attribute ([9d202a0](https://github.com/CoCreate-app/CoCreate-pass/commit/9d202a00b558b0ac73e4479cc325cc2c615b6020))
+
 # [1.3.0](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.2.38...v1.3.0) (2022-12-25)
 
 
