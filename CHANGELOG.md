@@ -1,3 +1,16 @@
+# [1.4.0](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.3.1...v1.4.0) (2022-12-29)
+
+
+### Bug Fixes
+
+* bump dependencies ([04f20dc](https://github.com/CoCreate-app/CoCreate-pass/commit/04f20dcd53819b6b93b9623748abcd2ece368728))
+* cleaned demo folder ([886d1d9](https://github.com/CoCreate-app/CoCreate-pass/commit/886d1d90b941f39d0b55c8a1501e64e2fe9912e1))
+
+
+### Features
+
+* $uid magic value to generate a uid as a value ([a8f77de](https://github.com/CoCreate-app/CoCreate-pass/commit/a8f77de54bdc6df2fe1d3e2bd43957b59d28db96))
+
 ## [1.3.1](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.3.0...v1.3.1) (2022-12-27)
 
 
