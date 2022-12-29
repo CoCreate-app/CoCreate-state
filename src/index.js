@@ -1,5 +1,6 @@
 import observer from '@cocreate/observer';
 import action from '@cocreate/actions';
+import uid from '@cocreate/uuid';
 
 
 function init() {
@@ -125,7 +126,9 @@ function _getAttributeValues (element) {
 	let attributes = element.attributes;
 	for (let attribute of attributes){
 		if (attribute.name.startsWith('pass-')) {
-			if (attribute.name == 'pass-value' && !attribute.value) 
+			if (attribute.value == '$uid')
+				Object.assign(attributeValues, {[`'${attribute.name.substring(5)}'`]: uid.generate(6)});
+			else if (attribute.name == 'pass-value' && !attribute.value) 
 				Object.assign(attributeValues, {value: element.getvalue()});
 			else
 				Object.assign(attributeValues, {[`'${attribute.name.substring(5)}'`]: attribute.value});
