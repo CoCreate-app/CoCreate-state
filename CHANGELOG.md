@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.4.0...v1.4.1) (2022-12-30)
+
+
+### Bug Fixes
+
+* update config sources to use template  braces with entry on src ([560aa20](https://github.com/CoCreate-app/CoCreate-pass/commit/560aa20a84683e5c83609e360a7d3140ef4eee52))
+
 # [1.4.0](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.3.1...v1.4.0) (2022-12-29)
 
 
