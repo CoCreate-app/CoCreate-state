@@ -1,6 +1,7 @@
 import observer from '@cocreate/observer';
 import action from '@cocreate/actions';
 import uid from '@cocreate/uuid';
+import '@cocreate/element-prototype';
 
 
 function init() {
