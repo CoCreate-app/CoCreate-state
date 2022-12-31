@@ -1,3 +1,11 @@
+## [1.4.2](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.4.1...v1.4.2) (2022-12-31)
+
+
+### Bug Fixes
+
+* add @cocreate/element-prototype ([7697d8c](https://github.com/CoCreate-app/CoCreate-pass/commit/7697d8c0bac495a245289732c4062cd5ff9b42e5))
+* bump dependencies ([6f2da55](https://github.com/CoCreate-app/CoCreate-pass/commit/6f2da55453ddc23b098f1be8670c655b8e93c032))
+
 ## [1.4.1](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.4.0...v1.4.1) (2022-12-30)
 
 
