@@ -1,3 +1,15 @@
+# [1.6.0](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.5.0...v1.6.0) (2023-01-01)
+
+
+### Bug Fixes
+
+* hasAttribute(pass-value) ([653cf8f](https://github.com/CoCreate-app/CoCreate-pass/commit/653cf8fa6368f5b89ca6ff380994661263f78e4e))
+
+
+### Features
+
+* if element.value !== undefind  getValue ([9244ec5](https://github.com/CoCreate-app/CoCreate-pass/commit/9244ec5af648ee153fff9c8bca556251d4ee5cf7))
+
 # [1.5.0](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.4.2...v1.5.0) (2023-01-01)
 
 
