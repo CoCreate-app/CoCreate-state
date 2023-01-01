@@ -25,7 +25,7 @@ function __initPassSessionIds() {
 	__initPassItems(user_id, ".sessionUser_Id");
 }
 
-// ToDo: can be depreciateddo to component localStorage
+// ToDo: can be depreciated do to component localStorage
 function __initPassItems(id, selector, noFetch) {
 	if (id) {
 		let elements = document.querySelectorAll(selector);
@@ -51,45 +51,43 @@ function initElement (element) {
 	passedAttributes = JSON.parse(passedAttributes);
 	if (!passedAttributes || passedAttributes.length == 0) return;
 	
-	let attrValues = passedAttributes[`'${pass_id}'`];
+	let attrValues = passedAttributes[`${pass_id}`];
 	if (!attrValues) return;
 	_setAttributeValues(element, attrValues);
 }
 
 function _setAttributeValues (el, attrValues) {
-	let isRefresh = el.getAttribute('pass-refresh') || el.hasAttribute('pass-refresh');
-	if (isRefresh === 'false' || isRefresh === false || isRefresh === null || isRefresh === undefined)
-		isRefresh = false;
-	else
+	let isRefresh = el.getAttribute('pass-refresh');
+	if (isRefresh === null || isRefresh === undefined)
+		isRefresh = attrValues['refresh']
+
+	if (isRefresh && isRefresh != 'false' || isRefresh === '')
 		isRefresh = true;
+	else if (!isRefresh || isRefresh === 'false')
+		isRefresh = false;
+
+	delete attrValues['refresh']
 
 	Object.keys(attrValues).forEach(key => {
-		let attName = key.replace("'", '').replace("'", '');
-		_setAttributeValue(el, attName, attrValues[key], isRefresh);
-		_setAttributeValue(el, `pass-${attName}`, attrValues[key], isRefresh);
-		if (attName == 'collection' || attName == 'document_id' || attName == 'name'){
-			_setAttributeValue(el, `fetch-${attName}`, attrValues[key], isRefresh);
-			_setAttributeValue(el, `pass-fetch-${attName}`, attrValues[key], isRefresh);
+		_setAttributeValue(el, key, attrValues[key], isRefresh);
+		_setAttributeValue(el, `pass-${key}`, attrValues[key], isRefresh);
+		if (key == 'collection' || key == 'document_id' || key == 'name'){
+			_setAttributeValue(el, `fetch-${key}`, attrValues[key], isRefresh);
+			_setAttributeValue(el, `pass-fetch-${key}`, attrValues[key], isRefresh);
 		}
 	});
-
-	// if (prefix) {
-	// 	_setAttributeValue(el, 'name', prefix + el.getAttribute('name'), isRefresh, true);
-	// 	_setAttributeValue(el, 'fetch-name', prefix + el.getAttribute('fetch-name'), isRefresh, true);
-	// 	_setAttributeValue(el, 'pass-prefix', prefix, isRefresh);
-	// }
 }
 
-function _setAttributeValue (element, attrname, value, isRefresh) {
+function _setAttributeValue (element, attribute, value, isRefresh) {
 	// ToDo: if (value !== undefined)???
-	if (!element.getAttribute(attrname) || isRefresh) {
-		if (attrname == 'value') {					
+	if (!element.getAttribute(attribute) || isRefresh) {
+		if (attribute == 'value') {					
 			if (element.value == '' || element.value && isRefresh)
 				element.value = value;
 			else if (isRefresh || !element.getValue())
 				element.setValue(value)
-		} else if (element.hasAttribute(attrname) && value)
-			element.setAttribute(attrname, value);
+		} else if (element.hasAttribute(attribute) && value)
+			element.setAttribute(attribute, value);
 	}
 }
 
@@ -110,7 +108,7 @@ function passAttributes (element) {
 	for (let i = 0; i < elements.length; i++) {
 		let attrValues = _getAttributeValues(elements[i]);
 		let pass_to = elements[i].getAttribute('pass_to');
-		Object.assign(passedAttributes, {[`'${pass_to}'`]: attrValues});
+		Object.assign(passedAttributes, {[`${pass_to}`]: attrValues});
 		_getPassId(attrValues, pass_to);
 	}
 	
@@ -128,11 +126,11 @@ function _getAttributeValues (element) {
 	for (let attribute of attributes){
 		if (attribute.name.startsWith('pass-')) {
 			if (attribute.value == '$uid')
-				Object.assign(attributeValues, {[`'${attribute.name.substring(5)}'`]: uid.generate(6)});
+				Object.assign(attributeValues, {[`${attribute.name.substring(5)}`]: uid.generate(6)});
 			else if (attribute.name == 'pass-value' && !attribute.value) 
 				Object.assign(attributeValues, {value: element.getvalue()});
 			else
-				Object.assign(attributeValues, {[`'${attribute.name.substring(5)}'`]: attribute.value});
+				Object.assign(attributeValues, {[`${attribute.name.substring(5)}`]: attribute.value});
 		}
 	}
 	return attributeValues;
