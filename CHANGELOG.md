@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.4.2...v1.5.0) (2023-01-01)
+
+
+### Features
+
+* pass-refresh can be used on pass_id or pass_to elements ([cb7316b](https://github.com/CoCreate-app/CoCreate-pass/commit/cb7316b0af87f40753469f4210ecd7fc5c5196e8))
+
 ## [1.4.2](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.4.1...v1.4.2) (2022-12-31)
 
 
