@@ -127,12 +127,15 @@ function _getAttributeValues (element) {
 		if (attribute.name.startsWith('pass-')) {
 			if (attribute.value == '$uid')
 				Object.assign(attributeValues, {[`${attribute.name.substring(5)}`]: uid.generate(6)});
-			else if (attribute.name == 'pass-value' && !attribute.value || element.value !== undefined) 
+			else if (attribute.name == 'pass-value' && !attribute.value) 
 				Object.assign(attributeValues, {value: element.getvalue()});
 			else
 				Object.assign(attributeValues, {[`${attribute.name.substring(5)}`]: attribute.value});
 		}
 	}
+	if (element.value !== undefined && !element.hasAttribute('pass-value'))
+		Object.assign(attributeValues, {value: element.getvalue()});
+
 	return attributeValues;
 }
 
