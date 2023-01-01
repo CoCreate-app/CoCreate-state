@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.6.0...v1.6.1) (2023-01-01)
+
+
+### Bug Fixes
+
+* docs sanbox overflow ([02fef56](https://github.com/CoCreate-app/CoCreate-pass/commit/02fef56b8b0e4a4fa6bb69f585ef6fc6f9f8e90a))
+
 # [1.6.0](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.5.0...v1.6.0) (2023-01-01)
 
 
