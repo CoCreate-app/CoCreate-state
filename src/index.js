@@ -127,7 +127,7 @@ function _getAttributeValues (element) {
 		if (attribute.name.startsWith('pass-')) {
 			if (attribute.value == '$uid')
 				Object.assign(attributeValues, {[`${attribute.name.substring(5)}`]: uid.generate(6)});
-			else if (attribute.name == 'pass-value' && !attribute.value) 
+			else if (attribute.name == 'pass-value' && !attribute.value || element.value !== undefined) 
 				Object.assign(attributeValues, {value: element.getvalue()});
 			else
 				Object.assign(attributeValues, {[`${attribute.name.substring(5)}`]: attribute.value});
