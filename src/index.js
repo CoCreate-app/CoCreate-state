@@ -75,6 +75,12 @@ function _setAttributeValues (el, attrValues) {
 			_setAttributeValue(el, `fetch-${key}`, attrValues[key], isRefresh);
 			_setAttributeValue(el, `pass-fetch-${key}`, attrValues[key], isRefresh);
 		}
+		if (key == 'template'){
+			_setAttributeValue(el, 'template_id', attrValues[key], isRefresh);
+		}
+		if (key == 'template_id'){
+			_setAttributeValue(el, 'template', attrValues[key], isRefresh);
+		}
 	});
 }
 
