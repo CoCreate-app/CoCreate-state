@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.6.2...v1.7.0) (2023-01-05)
+
+
+### Features
+
+* if pass-template or pass-template_id treat the same and set the value ([753c546](https://github.com/CoCreate-app/CoCreate-pass/commit/753c5466ed6797cf342c44649d7d278fd0469030))
+
 ## [1.6.2](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.6.1...v1.6.2) (2023-01-05)
 
 
