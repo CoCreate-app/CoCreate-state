@@ -1,3 +1,11 @@
+## [1.7.1](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.7.0...v1.7.1) (2023-01-06)
+
+
+### Bug Fixes
+
+* bump dependencies, worklow [@v3](https://github.com/v3) ([fd18671](https://github.com/CoCreate-app/CoCreate-pass/commit/fd18671fa988bee7dba4dbe1c3f0076ea5c0abfd))
+* edit in github btn styles ([e27ed73](https://github.com/CoCreate-app/CoCreate-pass/commit/e27ed73b54c1bacb76dbd3973fb02fb0e55ce264))
+
 # [1.7.0](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.6.2...v1.7.0) (2023-01-05)
 
 
