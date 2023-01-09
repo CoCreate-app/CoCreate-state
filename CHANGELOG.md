@@ -1,3 +1,10 @@
+## [1.7.2](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.7.1...v1.7.2) (2023-01-09)
+
+
+### Bug Fixes
+
+* bump dependnecies ([a2d1528](https://github.com/CoCreate-app/CoCreate-pass/commit/a2d1528eb67a5aabf13a5c29f365a8064282c681))
+
 ## [1.7.1](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.7.0...v1.7.1) (2023-01-06)
 
 
