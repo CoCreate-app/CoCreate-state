@@ -171,4 +171,4 @@ action.init({
 
 init();
 
-export default {passAttributes};
+export default {initElements, initElement, passAttributes};
