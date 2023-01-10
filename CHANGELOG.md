@@ -1,3 +1,15 @@
+# [1.8.0](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.7.2...v1.8.0) (2023-01-10)
+
+
+### Bug Fixes
+
+* bump dependencies ([9b3ca02](https://github.com/CoCreate-app/CoCreate-pass/commit/9b3ca02eea751b821b025afbfea637ec3462e105))
+
+
+### Features
+
+* add initElement and initElements to CoCreate object ([9526382](https://github.com/CoCreate-app/CoCreate-pass/commit/9526382bb30542a71d644cf2e5cfc3ae54a5a75a))
+
 ## [1.7.2](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.7.1...v1.7.2) (2023-01-09)
 
 
