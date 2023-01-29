@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.8.2...v1.9.0) (2023-01-29)
+
+
+### Features
+
+* import @cocreate/local-storage ([a6cc76f](https://github.com/CoCreate-app/CoCreate-pass/commit/a6cc76fbcbd564758ac7f20359f44d3625355090))
+
 ## [1.8.2](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.8.1...v1.8.2) (2023-01-27)
 
 
