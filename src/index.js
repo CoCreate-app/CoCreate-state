@@ -2,6 +2,7 @@ import observer from '@cocreate/observer';
 import action from '@cocreate/actions';
 import uid from '@cocreate/uuid';
 import '@cocreate/element-prototype';
+import localStorage from '@cocreate/local-storage';
 
 
 function init() {
@@ -19,8 +20,8 @@ function init() {
 
 // ToDo: can be depreciated do to component localStorage
 function __initPassSessionIds() {
-	let orgId = window.localStorage.getItem('organization_id');
-	let user_id = window.localStorage.getItem('user_id');
+	let orgId = localStorage.getItem('organization_id');
+	let user_id = localStorage.getItem('user_id');
 	__initPassItems(orgId, ".sessionOrg_Id", true);
 	__initPassItems(user_id, ".sessionUser_Id");
 }
@@ -46,7 +47,7 @@ function initElement (element) {
 	let pass_id = element.getAttribute('pass_id');
 	if (!pass_id) return;
 
-	let passedAttributes = window.localStorage.getItem('passedAttributes');
+	let passedAttributes = localStorage.getItem('passedAttributes');
 	
 	passedAttributes = JSON.parse(passedAttributes);
 	if (!passedAttributes || passedAttributes.length == 0) return;
@@ -118,7 +119,7 @@ function passAttributes (element) {
 		_getPassId(attrValues, pass_to);
 	}
 	
-	window.localStorage.setItem('passedAttributes', JSON.stringify(passedAttributes));
+	localStorage.setItem('passedAttributes', JSON.stringify(passedAttributes));
 
 	document.dispatchEvent(new CustomEvent('passEnd', {
 		detail: {}
