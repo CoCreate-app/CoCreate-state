@@ -49,9 +49,9 @@ function initElement (element) {
 
 	let passedAttributes = localStorage.getItem('passedAttributes');
 	
-	passedAttributes = JSON.parse(passedAttributes);
 	if (!passedAttributes || passedAttributes.length == 0) return;
-	
+	passedAttributes = JSON.parse(passedAttributes);
+
 	let attrValues = passedAttributes[`${pass_id}`];
 	if (!attrValues) return;
 	_setAttributeValues(element, attrValues);
