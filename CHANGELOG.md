@@ -1,3 +1,10 @@
+## [1.9.3](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.9.2...v1.9.3) (2023-01-30)
+
+
+### Bug Fixes
+
+* if condition before JSON.parse ([9741a46](https://github.com/CoCreate-app/CoCreate-pass/commit/9741a4659091467baedc65853040c7d995fbba4b))
+
 ## [1.9.2](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.9.1...v1.9.2) (2023-01-29)
 
 
