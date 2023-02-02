@@ -15,6 +15,13 @@ function init() {
 			initElements(elements)
 		}
 	});
+	document.addEventListener('click', function(e) {
+		const target = e.target.closest('[pass_to]');
+		if (target) {
+			if (target.closest('[actions*="pass"]')) return;
+			passAttributes(target);
+		}
+	});
 
 }
 
@@ -26,7 +33,7 @@ function __initPassSessionIds() {
 	__initPassItems(user_id, ".sessionUser_Id");
 }
 
-// ToDo: can be depreciated do to component localStorage
+// ToDo: can be depreciated do to component localStorage add to crud as a keyword document_id="{{user_id}}"
 function __initPassItems(id, selector, noFetch) {
 	if (id) {
 		let elements = document.querySelectorAll(selector);
@@ -72,14 +79,14 @@ function _setAttributeValues (el, attrValues) {
 	Object.keys(attrValues).forEach(key => {
 		_setAttributeValue(el, key, attrValues[key], isRefresh);
 		_setAttributeValue(el, `pass-${key}`, attrValues[key], isRefresh);
-		if (key == 'collection' || key == 'document_id' || key == 'name'){
+		if (key == 'collection' || key == 'document_id' || key == 'name') {
 			_setAttributeValue(el, `fetch-${key}`, attrValues[key], isRefresh);
 			_setAttributeValue(el, `pass-fetch-${key}`, attrValues[key], isRefresh);
 		}
-		if (key == 'template'){
+		if (key == 'template') {
 			_setAttributeValue(el, 'template_id', attrValues[key], isRefresh);
 		}
-		if (key == 'template_id'){
+		if (key == 'template_id') {
 			_setAttributeValue(el, 'template', attrValues[key], isRefresh);
 		}
 	});
@@ -98,7 +105,7 @@ function _setAttributeValue (element, attribute, value, isRefresh) {
 	}
 }
 
-function passAttributes (element) {
+function passAttributes(element) {
 	let passedAttributes = {};
 	let elements = []
 
