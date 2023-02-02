@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.9.6...v1.10.0) (2023-02-02)
+
+
+### Features
+
+* pass_to clickEvent to trigger pass. if actions=* pass return ([a64d4a5](https://github.com/CoCreate-app/CoCreate-pass/commit/a64d4a531d4877be442c9484e883d6bec2a5307a))
+
 ## [1.9.6](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.9.5...v1.9.6) (2023-02-01)
 
 
