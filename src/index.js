@@ -98,7 +98,7 @@ function _setAttributeValue (element, attribute, value, isRefresh) {
 		if (attribute == 'value') {					
 			if (element.value == '' || element.value && isRefresh)
 				element.value = value;
-			else if (isRefresh || !element.getValue())
+			else if (isRefresh || element.hasAttribute('value') && !element.getValue())
 				element.setValue(value)
 		} else if (element.hasAttribute(attribute) && value)
 			element.setAttribute(attribute, value);
