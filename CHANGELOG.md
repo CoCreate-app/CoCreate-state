@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.10.0...v1.11.0) (2023-03-16)
+
+
+### Features
+
+* replaced get-value and set-value with a super charged version of CoCreate-events ([2206fd2](https://github.com/CoCreate-app/CoCreate-pass/commit/2206fd268115dec92e30241dd9cbb0da375781f7))
+
 # [1.10.0](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.9.6...v1.10.0) (2023-02-02)
 
 
