@@ -1,3 +1,12 @@
+## [1.11.3](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.11.2...v1.11.3) (2023-03-30)
+
+
+### Bug Fixes
+
+* bump [@cocreate](https://github.com/cocreate) dependencies' ([12ce67d](https://github.com/CoCreate-app/CoCreate-pass/commit/12ce67d90708ff54f29e172c15df3a159af28be9))
+* bump cdn to 1.48.2' ([93bfd28](https://github.com/CoCreate-app/CoCreate-pass/commit/93bfd280a7cecc55deea94ed94d806f4282b3fe5))
+* updated demo cdn ([b2d0282](https://github.com/CoCreate-app/CoCreate-pass/commit/b2d0282b65c2d1d47768d1ee75f4ead2b6430827))
+
 ## [1.11.2](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.11.1...v1.11.2) (2023-03-16)
 
 
