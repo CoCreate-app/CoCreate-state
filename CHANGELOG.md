@@ -1,3 +1,11 @@
+## [1.11.4](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.11.3...v1.11.4) (2023-04-11)
+
+
+### Bug Fixes
+
+* bump cdn to 1.49.0' ([5057779](https://github.com/CoCreate-app/CoCreate-pass/commit/5057779823b1aae1e7fb0882ee654d805a542969))
+* renamed domains to hosts ([a93a0cb](https://github.com/CoCreate-app/CoCreate-pass/commit/a93a0cb724ba2707e3dd860164d748938c24b597))
+
 ## [1.11.3](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.11.2...v1.11.3) (2023-03-30)
 
 
