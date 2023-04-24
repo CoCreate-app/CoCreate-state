@@ -1,3 +1,11 @@
+## [1.12.3](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.2...v1.12.3) (2023-04-24)
+
+
+### Bug Fixes
+
+* updated worrkflows to v3 and node version 16 ([8cc356a](https://github.com/CoCreate-app/CoCreate-pass/commit/8cc356acdf56101d34b35a6f93264cf4ad016c3e))
+* workflow node version updated  16 ([bae6933](https://github.com/CoCreate-app/CoCreate-pass/commit/bae693339c0ab6fee62b76417d5e588e4b940575))
+
 ## [1.12.2](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.1...v1.12.2) (2023-04-24)
 
 
