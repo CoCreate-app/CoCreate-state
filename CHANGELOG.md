@@ -1,3 +1,15 @@
+# [1.12.0](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.11.7...v1.12.0) (2023-04-24)
+
+
+### Bug Fixes
+
+* bump cdn to 1.50.0 ([0074e41](https://github.com/CoCreate-app/CoCreate-pass/commit/0074e4196b756c8f271cf688a4a0664299c1d4d9))
+
+
+### Features
+
+* added pwa manifest ([1ddae90](https://github.com/CoCreate-app/CoCreate-pass/commit/1ddae90bb0a2a8c4054b62e1bf47efe2b5f40e96))
+
 ## [1.11.7](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.11.6...v1.11.7) (2023-04-11)
 
 
