@@ -1,3 +1,11 @@
+## [1.12.1](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.0...v1.12.1) (2023-04-24)
+
+
+### Bug Fixes
+
+* bump cdn to 1.50.3 ([8289ac7](https://github.com/CoCreate-app/CoCreate-pass/commit/8289ac7b459643d40cfa7367575d8183794e541b))
+* removed uglifyjs-webpack-plugin ([c08889f](https://github.com/CoCreate-app/CoCreate-pass/commit/c08889ff61509f70b8aa0181d0e8999420ffa384))
+
 # [1.12.0](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.11.7...v1.12.0) (2023-04-24)
 
 
