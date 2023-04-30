@@ -1,3 +1,13 @@
+## [1.12.4](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.3...v1.12.4) (2023-04-30)
+
+
+### Bug Fixes
+
+* fullscreen target updated to fullscreen fullscreen-target ([1d2455b](https://github.com/CoCreate-app/CoCreate-pass/commit/1d2455b86fdda1e7b822d695f84457113225bbc4))
+* package-lock.json and pnpm-lock.yaml added to .gitignore ([bcb4c68](https://github.com/CoCreate-app/CoCreate-pass/commit/bcb4c68eb0a92b3d21d3f18ba08cbef5a454deee))
+* removed passSession, will be handeled by local storage and events ([341e84c](https://github.com/CoCreate-app/CoCreate-pass/commit/341e84cc93178bb449f41775eb897d68b77f454f))
+* removed toogle fullscreen icons. now using css content ([d8d9faf](https://github.com/CoCreate-app/CoCreate-pass/commit/d8d9faf4eeab211566ebfe5f0eace1e762b9e115))
+
 ## [1.12.3](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.2...v1.12.3) (2023-04-24)
 
 
