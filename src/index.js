@@ -6,7 +6,6 @@ import localStorage from '@cocreate/local-storage';
 
 
 function init() {
-	__initPassSessionIds(); // will be derprciated for CoCreate-localStorage
 	let elements = document.querySelectorAll('[pass_id]');
 	initElements(elements);
 	window.addEventListener('storage', function(e) {
@@ -23,26 +22,6 @@ function init() {
 		}
 	});
 
-}
-
-// ToDo: can be depreciated do to component localStorage
-function __initPassSessionIds() {
-	let orgId = localStorage.getItem('organization_id');
-	let user_id = localStorage.getItem('user_id');
-	__initPassItems(orgId, ".sessionOrg_Id", true);
-	__initPassItems(user_id, ".sessionUser_Id");
-}
-
-// ToDo: can be depreciated do to component localStorage add to crud as a keyword document_id="{{user_id}}"
-function __initPassItems(id, selector, noFetch) {
-	if (id) {
-		let elements = document.querySelectorAll(selector);
-		elements.forEach(el => {
-			_setAttributeValue(el, 'document_id', id);
-			_setAttributeValue(el, 'fetch-document_id', id);
-			_setAttributeValue(el, 'filter-value', id);
-		});
-	}
 }
 
 function initElements (elements) {
