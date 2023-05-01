@@ -1,3 +1,10 @@
+## [1.12.6](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.5...v1.12.6) (2023-05-01)
+
+
+### Bug Fixes
+
+* update manifest.json to manifest.webmanifest ([f506481](https://github.com/CoCreate-app/CoCreate-pass/commit/f5064814e928eb996f9fd36cd558faaaee4932c2))
+
 ## [1.12.5](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.4...v1.12.5) (2023-05-01)
 
 
