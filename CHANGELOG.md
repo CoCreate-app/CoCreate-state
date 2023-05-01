@@ -1,3 +1,10 @@
+## [1.12.5](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.4...v1.12.5) (2023-05-01)
+
+
+### Bug Fixes
+
+* replace fontawesome with svg ([46201bd](https://github.com/CoCreate-app/CoCreate-pass/commit/46201bd0d4de523df25e1b61772d981649fc9358))
+
 ## [1.12.4](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.3...v1.12.4) (2023-04-30)
 
 
