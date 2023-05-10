@@ -1,3 +1,10 @@
+## [1.12.8](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.7...v1.12.8) (2023-05-10)
+
+
+### Bug Fixes
+
+* apikey renamed to key ([2da7ee7](https://github.com/CoCreate-app/CoCreate-pass/commit/2da7ee755d407ecd4da871accaae3c508b6c3665))
+
 ## [1.12.7](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.6...v1.12.7) (2023-05-06)
 
 
