@@ -72,7 +72,7 @@ function _setAttributeValues (el, attrValues) {
 }
 
 function _setAttributeValue (element, attribute, value, isRefresh) {
-	// ToDo: if (value !== undefined)???
+	// TODO: if (value !== undefined)???
 	if (!element.getAttribute(attribute) || isRefresh) {
 		if (attribute == 'value') {					
 			if (element.value == '' || element.value && isRefresh)
