@@ -1,3 +1,10 @@
+## [1.12.9](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.8...v1.12.9) (2023-05-18)
+
+
+### Bug Fixes
+
+* Refactor pass.js code ([cd995f6](https://github.com/CoCreate-app/CoCreate-pass/commit/cd995f6a2d676de572817b7bb966af5bfcc61a93))
+
 ## [1.12.8](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.7...v1.12.8) (2023-05-10)
 
 
