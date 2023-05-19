@@ -1,3 +1,10 @@
+## [1.12.10](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.9...v1.12.10) (2023-05-19)
+
+
+### Bug Fixes
+
+* update packages to latest version. This commit updates various packages in the dependencies section of the package.json file to their latest published versions, thereby fixing multiple bugs and improving overall performance. ([58def22](https://github.com/CoCreate-app/CoCreate-pass/commit/58def2268c2ae4e3555e81c9a3d18653f62108f8))
+
 ## [1.12.9](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.8...v1.12.9) (2023-05-18)
 
 
