@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Pass prefix | CoCreateJS</title>
+    <head>
+        <title>Pass prefix | CoCreateJS</title>
 
-  <!-- CoCreate Favicon -->
-  <link rel="icon" href="https://cdn.cocreate.app/favicon.ico" type="image/ico" sizes="16x16">
-  <!-- CoCreate CSS CDN -->
-  <link rel="stylesheet" href="https://cdn.cocreate.app/pass/latest/CoCreate-pass.min.css" type="text/css"/>
-    <link rel="manifest" href="/manifest.webmanifest">
-</head>
-<body>
-  
-	<!-- windows -->
-	<button><a actions="pass" pass-collection="modules" pass-document_id="123" pass_to="me1234">test.1</a></button>
-	<button actions="pass" pass-collection="modules" pass-document_id="123" pass_to="me1234">test.1</button>
+        <!-- CoCreate Favicon -->
+        <link
+            rel="icon"
+            href="https://cdn.cocreate.app/favicon.ico"
+            type="image/ico"
+            sizes="16x16" />
+        <!-- CoCreate CSS CDN -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.cocreate.app/pass/latest/CoCreate-pass.min.css"
+            type="text/css" />
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
+    <body>
+        <!-- windows -->
+        <button>
+            <a
+                actions="pass"
+                pass-collection="modules"
+                pass-document_id="123"
+                pass_to="me1234"
+                >test.1</a
+            >
+        </button>
+        <button
+            actions="pass"
+            pass-collection="modules"
+            pass-document_id="123"
+            pass_to="me1234">
+            test.1
+        </button>
 
-	<h1 collection="module_activities" document_id="5edda7608d5c7a7d656edecd" name="name" pass_id="me1234"></h1>
+        <h1
+            collection="module_activities"
+            document_id="5edda7608d5c7a7d656edecd"
+            name="name"
+            pass_id="me1234"></h1>
 
+        <div id="modal-viewport"></div>
 
-	
-	<div id="modal-viewport" ></div>
-	
-  
-  <!--CoCreateJS CDN-->
-  <script src="https://cdn.cocreate.app/pass/latest/CoCreate-pass.min.js" ></script>
-</body>
+        <!--CoCreateJS CDN-->
+        <script src="https://cdn.cocreate.app/pass/latest/CoCreate-pass.min.js"></script>
+    </body>
 </html>
