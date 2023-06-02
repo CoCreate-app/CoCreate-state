@@ -1,42 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <title>Pass Value | CoCreateJS</title>
-        <link rel="icon" href="https://cdn.cocreate.app/favicon.ico" type="image/ico" sizes="16x16">
-		<link rel="manifest" href="/manifest.webmanifest" />
-	</head>
+        <link
+            rel="icon"
+            href="https://cdn.cocreate.app/favicon.ico"
+            type="image/ico"
+            sizes="16x16" />
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
 
     <body>
-
         <div id="modal-viewport" hidden></div>
 
         <div class="padding:10px" content_id="content">
+            <form
+                collection="test"
+                realtime="false"
+                document_id=""
+                class="margin-bottom:75px">
+                <textarea
+                    class="floating-label"
+                    pass-value
+                    pass_to="test1"
+                    name="test1"
+                    placeholder="Pass to test 1"></textarea>
 
-            <form collection="test" realtime="false" document_id="" class="margin-bottom:75px">
+                <textarea
+                    class="floating-label"
+                    pass-value
+                    pass_to="test2"
+                    name="test2"
+                    placeholder="Pass to Test 2"></textarea>
 
-                <textarea class="floating-label" pass-value pass_to="test1" name="test1" placeholder="Pass to test 1"></textarea>
-
-                <textarea class="floating-label" pass-value pass_to="test2" name="test2" placeholder="Pass to Test 2"></textarea>
-
-                <button actions="pass" class="position:relative bg-blue grow-hover border-radius:50% width:40px height:40px">
+                <button
+                    actions="pass"
+                    class="position:relative bg-blue grow-hover border-radius:50% width:40px height:40px">
                     <i class="far fa-save color:white"></i>
                 </button>
-
             </form>
 
-            <form collection="test" realtime="false" document_id="" class="margin-bottom:75px">
+            <form
+                collection="test"
+                realtime="false"
+                document_id=""
+                class="margin-bottom:75px">
+                <textarea
+                    class="floating-label"
+                    pass_id="test1"
+                    name="test1"
+                    placeholder="Test 2"></textarea>
 
-                <textarea class="floating-label" pass_id="test1" name="test1" placeholder="Test 2"></textarea>
-
-                <textarea class="floating-label" pass_id="test2" name="test2" placeholder="Test 2"></textarea>
-
+                <textarea
+                    class="floating-label"
+                    pass_id="test2"
+                    name="test2"
+                    placeholder="Test 2"></textarea>
             </form>
-
         </div>
 
         <!--<script src="../dist/CoCreate-pass.js"></script>-->
         <script src="https://cdn.cocreate.app/1.50.6/CoCreate.min.js"></script>
     </body>
-
 </html>
