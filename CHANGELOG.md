@@ -1,3 +1,11 @@
+## [1.12.12](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.11...v1.12.12) (2023-06-02)
+
+
+### Bug Fixes
+
+* format demo html ([61404f1](https://github.com/CoCreate-app/CoCreate-pass/commit/61404f113da2bd6eebe72f48a6e361706a3dcb1b))
+* Update dependencies versions for [@cocreate](https://github.com/cocreate) libraries ([29ae49a](https://github.com/CoCreate-app/CoCreate-pass/commit/29ae49aeac94d3e73963c69ac095dca76a0d8e11))
+
 ## [1.12.11](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.10...v1.12.11) (2023-05-21)
 
 
