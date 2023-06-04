@@ -1,3 +1,11 @@
+## [1.12.14](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.13...v1.12.14) (2023-06-04)
+
+
+### Bug Fixes
+
+* replaced secert GITHUB_TOKEN with GITHUB ([c2f237e](https://github.com/CoCreate-app/CoCreate-pass/commit/c2f237e2c42482290dd406ca381ea5c1db8673e3))
+* Update dependencies versions for [@cocreate](https://github.com/cocreate) libraries ([7f09486](https://github.com/CoCreate-app/CoCreate-pass/commit/7f094865edcfc57e88122a0a481e4b3b9cec42ec))
+
 ## [1.12.13](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.12...v1.12.13) (2023-06-04)
 
 
