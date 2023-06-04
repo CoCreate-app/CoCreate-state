@@ -1,3 +1,10 @@
+## [1.12.13](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.12...v1.12.13) (2023-06-04)
+
+
+### Bug Fixes
+
+* **semantic-release:** worklow error solved by running node version 14 ([a59275d](https://github.com/CoCreate-app/CoCreate-pass/commit/a59275d9d06c0658211086b0649f3036acda1de3))
+
 ## [1.12.12](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.11...v1.12.12) (2023-06-02)
 
 
