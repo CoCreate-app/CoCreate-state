@@ -1,3 +1,10 @@
+## [1.12.15](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.14...v1.12.15) (2023-06-04)
+
+
+### Bug Fixes
+
+* Refactor CoCreate.config.js to remove hard-coded credentials ([2ac4f6a](https://github.com/CoCreate-app/CoCreate-pass/commit/2ac4f6a47fa6f0acdb224693898000a5f4e07f9d))
+
 ## [1.12.14](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.13...v1.12.14) (2023-06-04)
 
 
