@@ -1,3 +1,10 @@
+## [1.12.20](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.19...v1.12.20) (2023-06-11)
+
+
+### Bug Fixes
+
+* @cocreate/cli moved to dependencies ([1553f65](https://github.com/CoCreate-app/CoCreate-pass/commit/1553f6573ce2e42ff138179053927fa4b44bc069))
+
 ## [1.12.19](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.18...v1.12.19) (2023-06-11)
 
 
