@@ -1,3 +1,10 @@
+## [1.12.18](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.17...v1.12.18) (2023-06-11)
+
+
+### Bug Fixes
+
+* renamed hosts to host. the value can be a string or an array of strings ([6e18ec2](https://github.com/CoCreate-app/CoCreate-pass/commit/6e18ec22efd0d86fee238fb1f5e241d33d26e9d4))
+
 ## [1.12.17](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.16...v1.12.17) (2023-06-10)
 
 
