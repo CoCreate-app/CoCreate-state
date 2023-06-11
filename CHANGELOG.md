@@ -1,3 +1,10 @@
+## [1.12.21](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.20...v1.12.21) (2023-06-11)
+
+
+### Bug Fixes
+
+* postintall error ([b2b31d7](https://github.com/CoCreate-app/CoCreate-pass/commit/b2b31d73ede06bca2ec75ab7cacf8c7482d0b7bd))
+
 ## [1.12.20](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.19...v1.12.20) (2023-06-11)
 
 
