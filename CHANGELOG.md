@@ -1,3 +1,11 @@
+## [1.12.24](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.23...v1.12.24) (2023-06-11)
+
+
+### Bug Fixes
+
+* testing workflow ([7f25972](https://github.com/CoCreate-app/CoCreate-pass/commit/7f25972be9e6f50ee77278a9f02a8a03cf16ad73))
+* testing workflow ([b74b7c6](https://github.com/CoCreate-app/CoCreate-pass/commit/b74b7c67754b446e8c354e3b01e11f40c32e6a80))
+
 ## [1.12.23](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.22...v1.12.23) (2023-06-11)
 
 
