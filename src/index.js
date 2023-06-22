@@ -151,8 +151,8 @@ observer.init({
 action.init({
     name: "pass",
     endEvent: "passEnd",
-    callback: (btn, data) => {
-        passAttributes(btn);
+    callback: (data) => {
+        passAttributes(data.element);
     },
 });
 
