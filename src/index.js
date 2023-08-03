@@ -58,7 +58,7 @@ function _setAttributeValues(el, attrValues) {
     Object.keys(attrValues).forEach(key => {
         _setAttributeValue(el, key, attrValues[key], isRefresh);
         _setAttributeValue(el, `pass-${key}`, attrValues[key], isRefresh);
-        if (key == 'collection' || key == 'document_id' || key == 'name') {
+        if (key == 'array' || key == 'object' || key == 'name') {
             _setAttributeValue(el, `fetch-${key}`, attrValues[key], isRefresh);
             _setAttributeValue(el, `pass-fetch-${key}`, attrValues[key], isRefresh);
         }
