@@ -1,3 +1,19 @@
+# [1.13.0](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.29...v1.13.0) (2023-08-16)
+
+
+### Bug Fixes
+
+* crud attributes renamed ([4e3c0a3](https://github.com/CoCreate-app/CoCreate-pass/commit/4e3c0a359d4772bec94d1ac48e64727522ce8292))
+* replace -target -selector ([949d549](https://github.com/CoCreate-app/CoCreate-pass/commit/949d5491e6ca932a6534da2ed0a30425ecea8a4b))
+* updated actions callback data object ([8adb427](https://github.com/CoCreate-app/CoCreate-pass/commit/8adb4279eda1b0f85bad2cf8919a9dd300f55060))
+* webpack.config and package.json make use of mode=production instead of process.env ([89835a6](https://github.com/CoCreate-app/CoCreate-pass/commit/89835a6556450446a49d253e0a6ff97cb7e8c92b))
+
+
+### Features
+
+* name attribute and variable renamed to key ([bffb28b](https://github.com/CoCreate-app/CoCreate-pass/commit/bffb28b257d9bc67c54d5f03a0f6acb3142d81a4))
+* update template_id to render-selector attribute. update filter attributes to filter selector-attributes ([73b11db](https://github.com/CoCreate-app/CoCreate-pass/commit/73b11db5cfecb74d182ec1ca53157376ec03af1f))
+
 ## [1.12.29](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.28...v1.12.29) (2023-06-14)
 
 
