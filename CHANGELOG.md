@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.13.0...v1.14.0) (2023-08-17)
+
+
+### Features
+
+* bump cocreate dependencies for the latest updates and features ([7a26ee4](https://github.com/CoCreate-app/CoCreate-pass/commit/7a26ee4dbb209443643746e7836cc3bb8e4ccce3))
+
 # [1.13.0](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.12.29...v1.13.0) (2023-08-16)
 
 
