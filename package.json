@@ -1,6 +1,6 @@
 {
   "name": "@cocreate/pass",
-  "version": "1.14.1",
+  "version": "1.15.0",
   "description": "Data attributes which can be used for components in CoCreate framework combined as a group of attributes that dynamically change attributes & fetch custom data.",
   "keywords": [
     "pass",
