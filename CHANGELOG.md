@@ -1,3 +1,12 @@
+## [1.14.1](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.14.0...v1.14.1) (2023-08-21)
+
+
+### Bug Fixes
+
+* /dist/CoCreate.js updated to https://CoCreate.app/dist/CoCreate.js ([b073c11](https://github.com/CoCreate-app/CoCreate-pass/commit/b073c1122a9a74d9f124ababec47a23c3d850e28))
+* replace cdn with /dist ([53a5b6a](https://github.com/CoCreate-app/CoCreate-pass/commit/53a5b6a62a68fff2a9ec1397237273e16e683b67))
+* update file uploader ([1bf4cab](https://github.com/CoCreate-app/CoCreate-pass/commit/1bf4cab95b16fbe6ad799b7e982f354c5d96aa9f))
+
 # [1.14.0](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.13.0...v1.14.0) (2023-08-17)
 
 
