@@ -1,3 +1,11 @@
+## [1.15.2](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.15.1...v1.15.2) (2023-09-18)
+
+
+### Bug Fixes
+
+*  Add path and pathname ([29e3dc5](https://github.com/CoCreate-app/CoCreate-pass/commit/29e3dc5c417d6ba2f2bffc490658eb4e0266b9b6))
+* Update CoCreate depndencies to latest versions ([ed8f624](https://github.com/CoCreate-app/CoCreate-pass/commit/ed8f624123793aeef8f0d84043af19e342a14edf))
+
 ## [1.15.1](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.15.0...v1.15.1) (2023-08-21)
 
 
