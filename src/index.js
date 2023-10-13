@@ -44,40 +44,40 @@ function initElement(element) {
 }
 
 function _setAttributeValues(el, attrValues) {
-    let isRefresh = el.getAttribute('pass-refresh');
-    if (isRefresh === null || isRefresh === undefined)
-        isRefresh = attrValues['refresh']
+    let isOverwrite = el.getAttribute('pass-overwrite');
+    if (isOverwrite === null || isOverwrite === undefined)
+        isOverwrite = attrValues['overwrite']
 
-    if (isRefresh && isRefresh != 'false' || isRefresh === '')
-        isRefresh = true;
-    else if (!isRefresh || isRefresh === 'false')
-        isRefresh = false;
+    if (isOverwrite && isOverwrite != 'false' || isOverwrite === '')
+        isOverwrite = true;
+    else if (!isOverwrite || isOverwrite === 'false')
+        isOverwrite = false;
 
-    delete attrValues['refresh']
+    delete attrValues['overwrite']
 
     Object.keys(attrValues).forEach(key => {
-        _setAttributeValue(el, key, attrValues[key], isRefresh);
-        _setAttributeValue(el, `pass-${key}`, attrValues[key], isRefresh);
+        _setAttributeValue(el, key, attrValues[key], isOverwrite);
+        _setAttributeValue(el, `pass-${key}`, attrValues[key], isOverwrite);
         if (key == 'array' || key == 'object' || key == 'name') {
-            _setAttributeValue(el, `fetch-${key}`, attrValues[key], isRefresh);
-            _setAttributeValue(el, `pass-fetch-${key}`, attrValues[key], isRefresh);
+            _setAttributeValue(el, `fetch-${key}`, attrValues[key], isOverwrite);
+            _setAttributeValue(el, `pass-fetch-${key}`, attrValues[key], isOverwrite);
         }
         if (key == 'template') {
-            _setAttributeValue(el, 'template_id', attrValues[key], isRefresh);
+            _setAttributeValue(el, 'template_id', attrValues[key], isOverwrite);
         }
         if (key == 'template_id') {
-            _setAttributeValue(el, 'template', attrValues[key], isRefresh);
+            _setAttributeValue(el, 'template', attrValues[key], isOverwrite);
         }
     });
 }
 
-function _setAttributeValue(element, attribute, value, isRefresh) {
+function _setAttributeValue(element, attribute, value, isOverwrite) {
     // TODO: if (value !== undefined)???
-    if (!element.getAttribute(attribute) || isRefresh) {
+    if (!element.getAttribute(attribute) || isOverwrite) {
         if (attribute == 'value') {
-            if (element.value == '' || element.value && isRefresh)
+            if (element.value == '' || element.value && isOverwrite)
                 element.value = value;
-            else if (isRefresh || element.hasAttribute('value') && !element.getValue())
+            else if (isOverwrite || element.hasAttribute('value') && !element.getValue())
                 element.setValue(value)
         } else if (element.hasAttribute(attribute) && value)
             element.setAttribute(attribute, value);
