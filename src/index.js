@@ -71,20 +71,20 @@ function _setAttributeValues(el, attrValues) {
     });
 }
 
-function _setAttributeValue(element, attribute, value, isOverwrite) {
+async function _setAttributeValue(element, attribute, value, isOverwrite) {
     // TODO: if (value !== undefined)???
     if (!element.getAttribute(attribute) || isOverwrite) {
         if (attribute == 'value') {
             if (element.value == '' || element.value && isOverwrite)
                 element.value = value;
-            else if (isOverwrite || element.hasAttribute('value') && !element.getValue())
+            else if (isOverwrite || element.hasAttribute('value') && !await element.getValue())
                 element.setValue(value)
         } else if (element.hasAttribute(attribute) && value)
             element.setAttribute(attribute, value);
     }
 }
 
-function passAttributes(element) {
+async function passAttributes(element) {
     let passedAttributes = {};
     let elements = []
 
@@ -99,7 +99,7 @@ function passAttributes(element) {
     }
 
     for (let i = 0; i < elements.length; i++) {
-        let attrValues = _getAttributeValues(elements[i]);
+        let attrValues = await _getAttributeValues(elements[i]);
         let pass_to = elements[i].getAttribute('pass_to');
         Object.assign(passedAttributes, { [`${pass_to}`]: attrValues });
         _getPassId(attrValues, pass_to);
@@ -113,7 +113,7 @@ function passAttributes(element) {
 
 }
 
-function _getAttributeValues(element) {
+async function _getAttributeValues(element) {
     let attributeValues = {};
     let attributes = element.attributes;
     for (let attribute of attributes) {
@@ -121,13 +121,13 @@ function _getAttributeValues(element) {
             if (attribute.value == '$uid')
                 Object.assign(attributeValues, { [`${attribute.name.substring(5)}`]: uid.generate(6) });
             else if (attribute.name == 'pass-value' && !attribute.value)
-                Object.assign(attributeValues, { value: element.getvalue() });
+                Object.assign(attributeValues, { value: await element.getvalue() });
             else
                 Object.assign(attributeValues, { [`${attribute.name.substring(5)}`]: attribute.value });
         }
     }
     if (element.value !== undefined && !element.hasAttribute('pass-value') && element.getvalue)
-        Object.assign(attributeValues, { value: element.getvalue() });
+        Object.assign(attributeValues, { value: await element.getvalue() });
 
     return attributeValues;
 }
