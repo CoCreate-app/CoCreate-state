@@ -1,3 +1,10 @@
+## [1.16.5](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.16.4...v1.16.5) (2023-10-17)
+
+
+### Bug Fixes
+
+* await getValue() ([271a10c](https://github.com/CoCreate-app/CoCreate-pass/commit/271a10cf1b489e2f727089600f6a52f3cc096f17))
+
 ## [1.16.4](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.16.3...v1.16.4) (2023-10-14)
 
 
