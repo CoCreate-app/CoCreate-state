@@ -1,3 +1,11 @@
+## [1.16.7](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.16.6...v1.16.7) (2023-11-03)
+
+
+### Bug Fixes
+
+* favicon.ico path ([3556375](https://github.com/CoCreate-app/CoCreate-pass/commit/3556375f643e9e74cf33a65106674aabdbe74c6a))
+* update dependencies to the lates versions ([1c44659](https://github.com/CoCreate-app/CoCreate-pass/commit/1c446599f5377b7cee92a6327ffb5e2d0209ef5f))
+
 ## [1.16.6](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.16.5...v1.16.6) (2023-10-25)
 
 
