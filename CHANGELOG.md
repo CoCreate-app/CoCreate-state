@@ -1,3 +1,11 @@
+## [1.16.8](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.16.7...v1.16.8) (2023-11-09)
+
+
+### Bug Fixes
+
+* meta name typo ([64de8d3](https://github.com/CoCreate-app/CoCreate-pass/commit/64de8d37a748b53581f0e7d7114bc8ecacc0cb9a))
+* update host ([3245a6b](https://github.com/CoCreate-app/CoCreate-pass/commit/3245a6b1954ce811535d3fed420b347bcaedc95b))
+
 ## [1.16.7](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.16.6...v1.16.7) (2023-11-03)
 
 
