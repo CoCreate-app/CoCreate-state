@@ -1,3 +1,10 @@
+## [1.16.10](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.16.9...v1.16.10) (2023-11-16)
+
+
+### Bug Fixes
+
+* filter-name renamed to filter-key ([70e8dcc](https://github.com/CoCreate-app/CoCreate-pass/commit/70e8dcc7f4f34f26ad0dbf05086f2f7981c264ca))
+
 ## [1.16.9](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.16.8...v1.16.9) (2023-11-12)
 
 
