@@ -10,7 +10,7 @@ function init() {
     initElements(elements);
     window.addEventListener('storage', function (e) {
         if (e.key == 'passedAttributes') {
-            elements = document.querySelectorAll('[pass_id]')
+            elements = document.querySelectorAll('[pass_id]:not([pass-onstoragechange="false"])')
             initElements(elements)
         }
     });
@@ -21,7 +21,6 @@ function init() {
             passAttributes(target);
         }
     });
-
 }
 
 function initElements(elements) {
