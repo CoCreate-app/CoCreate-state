@@ -103,6 +103,12 @@ async function passAttributes(element) {
         Object.assign(passedAttributes, { [`${pass_to}`]: attrValues });
         _getPassId(attrValues, pass_to);
     }
+    
+    if (!element.closest('href')) {
+        let currentState = localStorage.getItem('passedAttributes');
+        if (currentState)
+            history.pushState({ passedAttributes: currentState, title: '', url: '' }, '', location.href);
+    }
 
     localStorage.setItem('passedAttributes', JSON.stringify(passedAttributes));
 
