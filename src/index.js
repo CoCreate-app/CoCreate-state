@@ -6,19 +6,19 @@ import localStorage from '@cocreate/local-storage';
 
 
 function init() {
-    let elements = document.querySelectorAll('[pass_id]');
+    let elements = document.querySelectorAll('[state_id]');
     initElements(elements);
     window.addEventListener('storage', function (e) {
-        if (e.key == 'passedAttributes') {
-            elements = document.querySelectorAll('[pass_id]:not([pass-onstoragechange="false"])')
+        if (e.key == 'statedAttributes') {
+            elements = document.querySelectorAll('[state_id]:not([state-onstoragechange="false"])')
             initElements(elements)
         }
     });
     document.addEventListener('click', function (e) {
-        const target = e.target.closest('[pass_to]');
+        const target = e.target.closest('[state_to]');
         if (target) {
-            if (target.closest('[actions*="pass"]')) return;
-            passAttributes(target);
+            if (target.closest('[actions*="state"]')) return;
+            stateAttributes(target);
         }
     });
 }
@@ -29,21 +29,21 @@ function initElements(elements) {
 }
 
 function initElement(element) {
-    let pass_id = element.getAttribute('pass_id');
-    if (!pass_id) return;
+    let state_id = element.getAttribute('state_id');
+    if (!state_id) return;
 
-    let passedAttributes = localStorage.getItem('passedAttributes');
+    let statedAttributes = localStorage.getItem('statedAttributes');
 
-    if (!passedAttributes || passedAttributes.length == 0) return;
-    passedAttributes = JSON.parse(passedAttributes);
+    if (!statedAttributes || statedAttributes.length == 0) return;
+    statedAttributes = JSON.parse(statedAttributes);
 
-    let attrValues = passedAttributes[`${pass_id}`];
+    let attrValues = statedAttributes[`${state_id}`];
     if (!attrValues) return;
     _setAttributeValues(element, attrValues);
 }
 
 function _setAttributeValues(el, attrValues) {
-    let isOverwrite = el.getAttribute('pass-overwrite');
+    let isOverwrite = el.getAttribute('state-overwrite');
     if (isOverwrite === null || isOverwrite === undefined)
         isOverwrite = attrValues['overwrite']
 
@@ -56,10 +56,10 @@ function _setAttributeValues(el, attrValues) {
 
     Object.keys(attrValues).forEach(key => {
         _setAttributeValue(el, key, attrValues[key], isOverwrite);
-        _setAttributeValue(el, `pass-${key}`, attrValues[key], isOverwrite);
+        _setAttributeValue(el, `state-${key}`, attrValues[key], isOverwrite);
         if (key == 'array' || key == 'object' || key == 'name') {
             _setAttributeValue(el, `fetch-${key}`, attrValues[key], isOverwrite);
-            _setAttributeValue(el, `pass-fetch-${key}`, attrValues[key], isOverwrite);
+            _setAttributeValue(el, `state-fetch-${key}`, attrValues[key], isOverwrite);
         }
         if (key == 'template') {
             _setAttributeValue(el, 'template_id', attrValues[key], isOverwrite);
@@ -83,36 +83,36 @@ async function _setAttributeValue(element, attribute, value, isOverwrite) {
     }
 }
 
-async function passAttributes(element) {
-    let passedAttributes = {};
+async function stateAttributes(element) {
+    let statedAttributes = {};
     let elements = []
 
     let form = element.closest('form');
     if (form) {
-        elements = form.querySelectorAll('[pass_to]')
+        elements = form.querySelectorAll('[state_to]')
     } else {
-        if (element.hasAttribute('pass_to'))
+        if (element.hasAttribute('state_to'))
             elements.push(element)
-        let nestedElements = element.querySelectorAll('[pass_to]')
+        let nestedElements = element.querySelectorAll('[state_to]')
         elements.push(...nestedElements)
     }
 
     for (let i = 0; i < elements.length; i++) {
         let attrValues = await _getAttributeValues(elements[i]);
-        let pass_to = elements[i].getAttribute('pass_to');
-        Object.assign(passedAttributes, { [`${pass_to}`]: attrValues });
-        _getPassId(attrValues, pass_to);
+        let state_to = elements[i].getAttribute('state_to');
+        Object.assign(statedAttributes, { [`${state_to}`]: attrValues });
+        _getStateId(attrValues, state_to);
     }
-    
+
     if (!element.closest('href')) {
-        let currentState = localStorage.getItem('passedAttributes');
+        let currentState = localStorage.getItem('statedAttributes');
         if (currentState)
-            history.pushState({ passedAttributes: currentState, title: '', url: '' }, '', location.href);
+            history.pushState({ statedAttributes: currentState, title: '', url: '' }, '', location.href);
     }
 
-    localStorage.setItem('passedAttributes', JSON.stringify(passedAttributes));
+    localStorage.setItem('statedAttributes', JSON.stringify(statedAttributes));
 
-    document.dispatchEvent(new CustomEvent('passEnd', {
+    document.dispatchEvent(new CustomEvent('stateEnd', {
         detail: {}
     }))
 
@@ -122,45 +122,45 @@ async function _getAttributeValues(element) {
     let attributeValues = {};
     let attributes = element.attributes;
     for (let attribute of attributes) {
-        if (attribute.name.startsWith('pass-')) {
+        if (attribute.name.startsWith('state-')) {
             if (attribute.value == '$uid')
                 Object.assign(attributeValues, { [`${attribute.name.substring(5)}`]: uid.generate(6) });
-            else if (attribute.name == 'pass-value' && !attribute.value)
+            else if (attribute.name == 'state-value' && !attribute.value)
                 Object.assign(attributeValues, { value: await element.getvalue() });
             else
-                Object.assign(attributeValues, { [`${attribute.name.substring(5)}`]: attribute.value });
+                Object.assign(attributeValues, { [`${attribute.name.substring(6)}`]: attribute.value });
         }
     }
-    if (element.value !== undefined && !element.hasAttribute('pass-value') && element.getvalue)
+    if (element.value !== undefined && !element.hasAttribute('state-value') && element.getvalue)
         Object.assign(attributeValues, { value: await element.getvalue() });
 
     return attributeValues;
 }
 
-function _getPassId(attrValues, pass_to) {
-    const elements = document.querySelectorAll(`[pass_id="${pass_to}"]`);
+function _getStateId(attrValues, state_to) {
+    const elements = document.querySelectorAll(`[state_id="${state_to}"]`);
     for (let element of elements)
         _setAttributeValues(element, attrValues);
 }
 
 
 observer.init({
-    name: 'CoCreatePass',
+    name: 'CoCreateState',
     observe: ['addedNodes'],
-    target: '[pass_id]',
+    target: '[state_id]',
     callback: function (mutation) {
         initElement(mutation.target);
     }
 });
 
 action.init({
-    name: "pass",
-    endEvent: "passEnd",
+    name: "state",
+    endEvent: "stateEnd",
     callback: (data) => {
-        passAttributes(data.element);
+        stateAttributes(data.element);
     },
 });
 
 init();
 
-export default { initElements, initElement, passAttributes };
+export default { initElements, initElement, stateAttributes };
