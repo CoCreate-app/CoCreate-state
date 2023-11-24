@@ -8,13 +8,13 @@ module.exports = {
             "object": {
                 "_id": "602069863c260207bf49cab2",
                 "name": "index.html",
-                "path": "/docs/pass",
-                "pathname": "/docs/pass/index.html",
+                "path": "/docs/state",
+                "pathname": "/docs/state/index.html",
                 "src": "{{./docs/index.html}}",
                 "host": [
                     "*"
                 ],
-                "directory": "pass",
+                "directory": "state",
                 "content-type": "{{content-type}}",
                 "public": "true"
             }
