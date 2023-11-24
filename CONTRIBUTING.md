@@ -1,19 +1,19 @@
-# Contributing to CoCreate-pass
+# Contributing to CoCreate-state
 
-This project is work of [many contributors](https://github.com/CoCreate-app/CoCreate-pass/graphs/contributors).
-You're encouraged to submit [pull requests](https://github.com/CoCreate-app/CoCreate-pass/pulls),
-[propose features and discuss issues](https://github.com/CoCreate-app/CoCreate-pass/issues).
+This project is work of [many contributors](https://github.com/CoCreate-app/CoCreate-state/graphs/contributors).
+You're encouraged to submit [pull requests](https://github.com/CoCreate-app/CoCreate-state/pulls),
+[propose features and discuss issues](https://github.com/CoCreate-app/CoCreate-state/issues).
 
 In the examples below, substitute your Github username for `contributor` in URLs.
 
 ## Fork the Project
 
-Fork the [project on Github](https://github.com/CoCreate-app/CoCreate-pass) and check out your copy.
+Fork the [project on Github](https://github.com/CoCreate-app/CoCreate-state) and check out your copy.
 
 ```
-git pass https://github.com/contributor/CoCreate-pass.git
-cd CoCreate-pass
-git remote add upstream https://github.com/CoCreate-app/CoCreate-pass.git
+git state https://github.com/contributor/CoCreate-state.git
+cd CoCreate-state
+git remote add upstream https://github.com/CoCreate-app/CoCreate-state.git
 ```
 
 ## Create a Topic Branch
@@ -50,7 +50,7 @@ git config --global user.email "contributor@example.com"
 ```
 
 We use [semantic-release](https://github.com/semantic-release/semantic-release) as process to generate changelog
-and to release. Write meaningful commits according to 
+and to release. Write meaningful commits according to
 [Commit Message Formats](https://github.com/semantic-release/semantic-release#commit-message-format) is important.
 
 ```
@@ -66,7 +66,6 @@ Here is an example of the release type that should be done based on a [semantic-
 | `feat(pencil): add 'graphiteWidth' option`                                                                                                                                                       | ~~Minor~~ Feature Release  |
 | `perf(pencil): remove graphiteWidth option`<br><br>`BREAKING CHANGE: The graphiteWidth option has been removed.`<br>`The default graphite width of 10mm is always used for performance reasons.` | ~~Major~~ Breaking Release |
 
-
 ## Push
 
 ```
@@ -75,7 +74,7 @@ git push origin my-feature-branch
 
 ## Make a Pull Request
 
-Go to [https://github.com/CoCreate-app/CoCreate-pass](https://github.com/CoCreate-app/CoCreate-pass) and select your feature branch.
+Go to [https://github.com/CoCreate-app/CoCreate-state](https://github.com/CoCreate-app/CoCreate-state) and select your feature branch.
 Click the 'Pull Request' button and fill out the form. Pull requests are usually reviewed within a few days.
 
 ## Rebase
