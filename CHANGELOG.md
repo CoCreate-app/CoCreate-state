@@ -1,3 +1,15 @@
+# [1.20.0](https://github.com/CoCreate-app/CoCreate-state/compare/v1.19.0...v1.20.0) (2023-11-25)
+
+
+### Bug Fixes
+
+* update licensing details ([7cb0190](https://github.com/CoCreate-app/CoCreate-state/commit/7cb01903406dd95450f1215e7b2fecfa05efef41))
+
+
+### Features
+
+* upgrade dependencies for latest features and fixes ([7623ff6](https://github.com/CoCreate-app/CoCreate-state/commit/7623ff6e02fcaef1ae2acd779ea36298c1427cc2))
+
 # [1.19.0](https://github.com/CoCreate-app/CoCreate-state/compare/v1.18.1...v1.19.0) (2023-11-25)
 
 
