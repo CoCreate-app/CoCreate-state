@@ -1,3 +1,18 @@
+# [1.18.0](https://github.com/CoCreate-app/CoCreate-state/compare/v1.17.0...v1.18.0) (2023-11-25)
+
+
+### Bug Fixes
+
+* rename functions and attributes to state ([f80a1e4](https://github.com/CoCreate-app/CoCreate-state/commit/f80a1e4be08726638bc4c3a51f79164329656a05))
+* renamed component to state ([cbe1ac7](https://github.com/CoCreate-app/CoCreate-state/commit/cbe1ac72d48590c1fccb73ef5fae6ce586a0a5e2))
+* update nav, edit button and css path ([969fc56](https://github.com/CoCreate-app/CoCreate-state/commit/969fc56e81da08cb6761a7e92217a17911876801))
+
+
+### Features
+
+* pass-onstoragechange="false" prevents pass effecting other tabs/frames ([75fbf7d](https://github.com/CoCreate-app/CoCreate-state/commit/75fbf7dec08dca7c968af8ae36621aa4b4ec0ef4))
+* passedAttributes to history.pushState ([bb94772](https://github.com/CoCreate-app/CoCreate-state/commit/bb9477229768d0c5f4d72daae346e277dda2cbea))
+
 # [1.17.0](https://github.com/CoCreate-app/CoCreate-pass/compare/v1.16.10...v1.17.0) (2023-11-19)
 
 
