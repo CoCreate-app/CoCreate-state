@@ -1,3 +1,15 @@
+# [1.19.0](https://github.com/CoCreate-app/CoCreate-state/compare/v1.18.1...v1.19.0) (2023-11-25)
+
+
+### Bug Fixes
+
+* pass attributes renamed to state ([48e4d5c](https://github.com/CoCreate-app/CoCreate-state/commit/48e4d5ca75879fc89258e4a6f85f9c7e0062fcf9))
+
+
+### Features
+
+* upgrade dependencies for latest features and fixes ([63f8c4e](https://github.com/CoCreate-app/CoCreate-state/commit/63f8c4e3f28e1c88fd48541f5df6868c10306a37))
+
 ## [1.18.1](https://github.com/CoCreate-app/CoCreate-state/compare/v1.18.0...v1.18.1) (2023-11-25)
 
 
