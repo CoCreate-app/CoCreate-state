@@ -1,3 +1,10 @@
+## [1.18.1](https://github.com/CoCreate-app/CoCreate-state/compare/v1.18.0...v1.18.1) (2023-11-25)
+
+
+### Bug Fixes
+
+* renamed to state ([1a98a71](https://github.com/CoCreate-app/CoCreate-state/commit/1a98a7150e0e6af8c85255e03d4f74f43b138ab7))
+
 # [1.18.0](https://github.com/CoCreate-app/CoCreate-state/compare/v1.17.0...v1.18.0) (2023-11-25)
 
 
