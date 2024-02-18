@@ -103,14 +103,12 @@ async function stateAttributes(element) {
         Object.assign(statedAttributes, { [`${state_to}`]: attrValues });
         _getStateId(attrValues, state_to);
     }
-
+    statedAttributes = JSON.stringify(statedAttributes)
     if (!element.closest('href')) {
-        let currentState = localStorage.getItem('statedAttributes');
-        if (currentState)
-            history.pushState({ statedAttributes: currentState, title: '', url: '' }, '', location.href);
+        history.pushState({ statedAttributes, title: '', url: '' }, '', location.href);
     }
 
-    localStorage.setItem('statedAttributes', JSON.stringify(statedAttributes));
+    localStorage.setItem('statedAttributes', statedAttributes);
 
     document.dispatchEvent(new CustomEvent('stateEnd', {
         detail: {}
