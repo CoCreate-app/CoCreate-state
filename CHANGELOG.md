@@ -1,3 +1,10 @@
+## [1.20.1](https://github.com/CoCreate-app/CoCreate-state/compare/v1.20.0...v1.20.1) (2024-02-20)
+
+
+### Bug Fixes
+
+* state handling ([81461a7](https://github.com/CoCreate-app/CoCreate-state/commit/81461a74691b99e27d3eac47851fa31f3a1b49ba))
+
 # [1.20.0](https://github.com/CoCreate-app/CoCreate-state/compare/v1.19.0...v1.20.0) (2023-11-25)
 
 
