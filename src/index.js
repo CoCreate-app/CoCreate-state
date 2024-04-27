@@ -55,17 +55,23 @@ function _setAttributeValues(el, attrValues) {
     delete attrValues['overwrite']
 
     Object.keys(attrValues).forEach(key => {
-        _setAttributeValue(el, key, attrValues[key], isOverwrite);
-        _setAttributeValue(el, `state-${key}`, attrValues[key], isOverwrite);
-        if (key == 'array' || key == 'object' || key == 'name') {
-            _setAttributeValue(el, `fetch-${key}`, attrValues[key], isOverwrite);
-            _setAttributeValue(el, `state-fetch-${key}`, attrValues[key], isOverwrite);
-        }
-        if (key == 'template') {
-            _setAttributeValue(el, 'template_id', attrValues[key], isOverwrite);
-        }
-        if (key == 'template_id') {
-            _setAttributeValue(el, 'template', attrValues[key], isOverwrite);
+        if (attrValues[key] === '$back')
+            window.history.back()
+        else if (attrValues[key] === '$forward')
+            window.history.forward()
+        else {
+            _setAttributeValue(el, key, attrValues[key], isOverwrite);
+            _setAttributeValue(el, `state-${key}`, attrValues[key], isOverwrite);
+            if (key == 'array' || key == 'object' || key == 'name') {
+                _setAttributeValue(el, `fetch-${key}`, attrValues[key], isOverwrite);
+                _setAttributeValue(el, `state-fetch-${key}`, attrValues[key], isOverwrite);
+            }
+            if (key == 'template') {
+                _setAttributeValue(el, 'template_id', attrValues[key], isOverwrite);
+            }
+            if (key == 'template_id') {
+                _setAttributeValue(el, 'template', attrValues[key], isOverwrite);
+            }
         }
     });
 }
