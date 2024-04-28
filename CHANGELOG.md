@@ -1,3 +1,10 @@
+# [1.21.0](https://github.com/CoCreate-app/CoCreate-state/compare/v1.20.1...v1.21.0) (2024-04-28)
+
+
+### Features
+
+* $back and $forward operators for history control ([ffdeb5d](https://github.com/CoCreate-app/CoCreate-state/commit/ffdeb5d8d5331e51cbcd97043369f5eef1331c35))
+
 ## [1.20.1](https://github.com/CoCreate-app/CoCreate-state/compare/v1.20.0...v1.20.1) (2024-02-20)
 
 
