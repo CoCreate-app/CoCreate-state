@@ -147,6 +147,21 @@ function _getStateId(attrValues, state_to) {
         _setAttributeValues(element, attrValues);
 }
 
+window.addEventListener('popstate', function (event) {
+    if (event.state) {
+        if (event.state.statedAttributes) {
+            localStorage.setItem('statedAttributes', event.state.statedAttributes);
+            let elements = document.querySelectorAll('[state_id]')
+            initElements(elements)
+        }
+
+        if (event.state.url && event.state.url !== window.location.href) {
+            location.href = event.state.url; // Navigate if the URL is different
+        } else if (event.state.title) {
+            document.title = event.state.title; // Update the title if provided
+        }
+    }
+});
 
 observer.init({
     name: 'CoCreateState',
