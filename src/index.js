@@ -54,12 +54,14 @@ function _setAttributeValues(el, attrValues) {
 
     delete attrValues['overwrite']
 
-    Object.keys(attrValues).forEach(key => {
-        if (attrValues[key] === '$back')
-            window.history.back()
-        else if (attrValues[key] === '$forward')
-            window.history.forward()
-        else {
+    for (const key of Object.keys(attrValues)) {
+        if (attrValues[key] === '$back') {
+            window.history.back();
+            break;
+        } else if (attrValues[key] === '$forward') {
+            window.history.forward();
+            break;
+        } else {
             _setAttributeValue(el, key, attrValues[key], isOverwrite);
             _setAttributeValue(el, `state-${key}`, attrValues[key], isOverwrite);
             if (key == 'array' || key == 'object' || key == 'name') {
@@ -73,7 +75,7 @@ function _setAttributeValues(el, attrValues) {
                 _setAttributeValue(el, 'template', attrValues[key], isOverwrite);
             }
         }
-    });
+    }
 }
 
 async function _setAttributeValue(element, attribute, value, isOverwrite) {
@@ -103,15 +105,23 @@ async function stateAttributes(element) {
         elements.push(...nestedElements)
     }
 
+    let pushState = true
     for (let i = 0; i < elements.length; i++) {
         let attrValues = await _getAttributeValues(elements[i]);
+        if (attrValues.src === '$back' || attrValues.src === '$forward')
+            pushState = false
         let state_to = elements[i].getAttribute('state_to');
         Object.assign(statedAttributes, { [`${state_to}`]: attrValues });
         _getStateId(attrValues, state_to);
     }
     statedAttributes = JSON.stringify(statedAttributes)
-    if (!element.closest('href')) {
-        history.pushState({ statedAttributes, title: '', url: '' }, '', location.href);
+    if (pushState && !element.closest('href')) {
+        // TODO: Handle $title when adding statedAttributes
+        let title = element.getAttribute('title') || document.title || '';
+
+        history.pushState({ statedAttributes, title, url: location.href }, title, location.href);
+    } else {
+        console.log('pushState: ', pushState)
     }
 
     localStorage.setItem('statedAttributes', statedAttributes);
@@ -147,6 +157,13 @@ function _getStateId(attrValues, state_to) {
         _setAttributeValues(element, attrValues);
 }
 
+window.onload = function () {
+    if (!history.state || history.state.url !== location.href) {
+        const statedAttributes = localStorage.getItem('statedAttributes') || '';
+        history.replaceState({ statedAttributes, url: location.href, title: document.title }, document.title, location.href);
+    }
+};
+
 window.addEventListener('popstate', function (event) {
     if (event.state) {
         if (event.state.statedAttributes) {
@@ -156,6 +173,9 @@ window.addEventListener('popstate', function (event) {
         }
 
         if (event.state.url && event.state.url !== window.location.href) {
+            if (event.state.title)
+                sessionStorage.setItem('currentPageTitle', event.state.title); // Store title in session storage
+
             location.href = event.state.url; // Navigate if the URL is different
         } else if (event.state.title) {
             document.title = event.state.title; // Update the title if provided
