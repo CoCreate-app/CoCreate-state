@@ -1,3 +1,11 @@
+## [1.22.1](https://github.com/CoCreate-app/CoCreate-state/compare/v1.22.0...v1.22.1) (2024-04-29)
+
+
+### Bug Fixes
+
+* bump cocreate dependencies ([3972fe5](https://github.com/CoCreate-app/CoCreate-state/commit/3972fe5147f4e95b04df3188c3520ead5fd40a95))
+* state management ([13177bd](https://github.com/CoCreate-app/CoCreate-state/commit/13177bdf44ff2d3248e6ccce1b2c74222727d0c6))
+
 # [1.22.0](https://github.com/CoCreate-app/CoCreate-state/compare/v1.21.0...v1.22.0) (2024-04-29)
 
 
