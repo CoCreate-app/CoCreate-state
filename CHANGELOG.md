@@ -1,3 +1,15 @@
+# [1.22.0](https://github.com/CoCreate-app/CoCreate-state/compare/v1.21.0...v1.22.0) (2024-04-29)
+
+
+### Bug Fixes
+
+* improved state handeling and history api ([1b26d24](https://github.com/CoCreate-app/CoCreate-state/commit/1b26d24670d01020df4f2f054ee3dd100a3f5643))
+
+
+### Features
+
+* popstate event handling ([df2432b](https://github.com/CoCreate-app/CoCreate-state/commit/df2432bc5090ef2942218d8ddb652f321e2c246c))
+
 # [1.21.0](https://github.com/CoCreate-app/CoCreate-state/compare/v1.20.1...v1.21.0) (2024-04-28)
 
 
