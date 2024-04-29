@@ -55,25 +55,17 @@ function _setAttributeValues(el, attrValues) {
     delete attrValues['overwrite']
 
     for (const key of Object.keys(attrValues)) {
-        if (attrValues[key] === '$back') {
-            window.history.back();
-            break;
-        } else if (attrValues[key] === '$forward') {
-            window.history.forward();
-            break;
-        } else {
-            _setAttributeValue(el, key, attrValues[key], isOverwrite);
-            _setAttributeValue(el, `state-${key}`, attrValues[key], isOverwrite);
-            if (key == 'array' || key == 'object' || key == 'name') {
-                _setAttributeValue(el, `fetch-${key}`, attrValues[key], isOverwrite);
-                _setAttributeValue(el, `state-fetch-${key}`, attrValues[key], isOverwrite);
-            }
-            if (key == 'template') {
-                _setAttributeValue(el, 'template_id', attrValues[key], isOverwrite);
-            }
-            if (key == 'template_id') {
-                _setAttributeValue(el, 'template', attrValues[key], isOverwrite);
-            }
+        _setAttributeValue(el, key, attrValues[key], isOverwrite);
+        _setAttributeValue(el, `state-${key}`, attrValues[key], isOverwrite);
+        if (key == 'array' || key == 'object' || key == 'name') {
+            _setAttributeValue(el, `fetch-${key}`, attrValues[key], isOverwrite);
+            _setAttributeValue(el, `state-fetch-${key}`, attrValues[key], isOverwrite);
+        }
+        if (key == 'template') {
+            _setAttributeValue(el, 'template_id', attrValues[key], isOverwrite);
+        }
+        if (key == 'template_id') {
+            _setAttributeValue(el, 'template', attrValues[key], isOverwrite);
         }
     }
 }
@@ -105,26 +97,33 @@ async function stateAttributes(element) {
         elements.push(...nestedElements)
     }
 
-    let pushState = true
+    let changeState = false
     for (let i = 0; i < elements.length; i++) {
         let attrValues = await _getAttributeValues(elements[i]);
-        if (attrValues.src === '$back' || attrValues.src === '$forward')
-            pushState = false
+        if (attrValues.src === '$back' || attrValues.href === '$back') {
+            changeState = true
+            window.history.back();
+            break;
+        } else if (attrValues.src === '$forward' || attrValues.href === '$forward') {
+            changeState = true
+            window.history.forward();
+            break;
+        }
+
         let state_to = elements[i].getAttribute('state_to');
         Object.assign(statedAttributes, { [`${state_to}`]: attrValues });
         _getStateId(attrValues, state_to);
     }
     statedAttributes = JSON.stringify(statedAttributes)
-    if (pushState && !element.closest('href')) {
+    let href = element.closest('href')
+    if (!changeState && !href) {
         // TODO: Handle $title when adding statedAttributes
         let title = element.getAttribute('title') || document.title || '';
-
         history.pushState({ statedAttributes, title, url: location.href }, title, location.href);
-    } else {
-        console.log('pushState: ', pushState)
     }
 
-    localStorage.setItem('statedAttributes', statedAttributes);
+    if (!changeState)
+        localStorage.setItem('statedAttributes', statedAttributes);
 
     document.dispatchEvent(new CustomEvent('stateEnd', {
         detail: {}
@@ -158,9 +157,12 @@ function _getStateId(attrValues, state_to) {
 }
 
 window.onload = function () {
-    if (!history.state || history.state.url !== location.href) {
+    if (!history.length) {
         const statedAttributes = localStorage.getItem('statedAttributes') || '';
         history.replaceState({ statedAttributes, url: location.href, title: document.title }, document.title, location.href);
+    } else if (!history.state || history.state.url !== location.href) {
+        const statedAttributes = localStorage.getItem('statedAttributes') || '';
+        history.pushState({ statedAttributes, url: location.href, title: document.title }, document.title, location.href);
     }
 };
 
