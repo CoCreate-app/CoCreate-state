@@ -188,7 +188,7 @@ window.addEventListener('popstate', function (event) {
 observer.init({
     name: 'CoCreateState',
     observe: ['addedNodes'],
-    target: '[state_id]',
+    selector: '[state_id]',
     callback: function (mutation) {
         initElement(mutation.target);
     }
