@@ -1,3 +1,17 @@
+# [1.23.0](https://github.com/CoCreate-app/CoCreate-state/compare/v1.22.2...v1.23.0) (2024-11-04)
+
+
+### Bug Fixes
+
+* observer taget has been renamed to selector ([4dcda48](https://github.com/CoCreate-app/CoCreate-state/commit/4dcda482405c2ec3cf39cca80f419b1715b3abef))
+* pretier.config.js and file formating ([b1a9249](https://github.com/CoCreate-app/CoCreate-state/commit/b1a9249d198fbb90e0259771ea76489b950ab7e7))
+
+
+### Features
+
+* add prettier.config.js and format files ([c171ae1](https://github.com/CoCreate-app/CoCreate-state/commit/c171ae1b706a187ea6a728f766d85bf159df7819))
+* add prettier.config.js and format files ([db433e5](https://github.com/CoCreate-app/CoCreate-state/commit/db433e5982a558775ccb74a4b111cfbe2f429875))
+
 ## [1.22.2](https://github.com/CoCreate-app/CoCreate-state/compare/v1.22.1...v1.22.2) (2024-06-12)
 
 
