@@ -37,9 +37,15 @@ function initElement(element) {
 	if (!statedAttributes || statedAttributes.length == 0) return;
 	statedAttributes = JSON.parse(statedAttributes);
 
-	let attrValues = statedAttributes[`${state_id}`];
-	if (!attrValues) return;
-	_setAttributeValues(element, attrValues);
+	if (state_id.includes(",")) state_id = state_id.split(",");
+
+	if (!Array.isArray(state_id)) state_id = [state_id];
+
+	for (let i = 0; i < state_id.length; i++) {
+		let attrValues = statedAttributes[`${state_id[i].trim()}`];
+		if (!attrValues) return;
+		_setAttributeValues(element, attrValues);
+	}
 }
 
 function _setAttributeValues(el, attrValues) {
