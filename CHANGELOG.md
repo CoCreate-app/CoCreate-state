@@ -1,3 +1,15 @@
+# [1.24.0](https://github.com/CoCreate-app/CoCreate-state/compare/v1.23.0...v1.24.0) (2024-12-14)
+
+
+### Bug Fixes
+
+* support setting empty string ([ee2ad83](https://github.com/CoCreate-app/CoCreate-state/commit/ee2ad83dfddfb9209b64fdbd154c5ed85340b238))
+
+
+### Features
+
+* support comma seperated states to apply multiple states ([1777635](https://github.com/CoCreate-app/CoCreate-state/commit/1777635b0d3f98979c08735e07d137d9bfc40230))
+
 # [1.23.0](https://github.com/CoCreate-app/CoCreate-state/compare/v1.22.2...v1.23.0) (2024-11-04)
 
 
