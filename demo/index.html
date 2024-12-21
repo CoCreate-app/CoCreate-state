@@ -1,188 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>state | CoCreateJS</title>
+	<head>
+		<title>state | CoCreateJS</title>
 
-        <!-- CoCreate Favicon -->
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="../assets/favicon.ico" />
-        <!-- CoCreate CSS CDN -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.cocreate.app/state/latest/CoCreate-state.min.css"
-            type="text/css" />
-        <link rel="manifest" href="/manifest.webmanifest" />
-    </head>
-    <body style="padding: 20px">
-        <!-- windows -->
-        <button
-            actions="state, openModal"
-            modal-src="./documentation"
-            state-array="modules"
-            state-object=""
-            state_to="me1234"
-            modal-width="600px"
-            modal-height="100%"
-            modal-color="#333">
-            Window test.1
-        </button>
-        <button
-            actions="state, openModal"
-            modal-src="render.html"
-            state-array="module_activity"
-            state-object="5cd910dd30f02f16b3385821"
-            state_to="me1234"
-            modal-height="100%"
-            modal-color="red"
-            modal-x="20"
-            modal-y="40">
-            Window test.2
-        </button>
-        <!--Page-->
-        <button>
-            <a
-                href="render.html"
-                target=""
-                state-array="module_activity"
-                state-object="5d8aa1cfa37aee309596d6c6"
-                state_to="me1234"
-                >Page test.1.html
-                <div
-                    state_to="me12345"
-                    state-array="modules"
-                    state-object="5d8aa2fca37aee309596d6c8"></div>
-            </a>
-        </button>
-        ----
-        <button>
-            <a
-                href="CoCreate-kanban/simple-test.html"
-                state-array="module_activity"
-                state-key="stage"
-                state_to="stage"
-                >Fetch name</a
-            >
-        </button>
+		<!-- CoCreate Favicon -->
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="../assets/favicon.ico" />
+		<!-- CoCreate CSS CDN -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.cocreate.app/state/latest/CoCreate-state.min.css"
+			type="text/css" />
+		<link rel="manifest" href="/manifest.webmanifest" />
+	</head>
+	<body style="padding: 20px">
+		<!-- windows -->
+		<button
+			actions="state, openModal"
+			modal-src="./documentation"
+			state-array="modules"
+			state-object=""
+			state_to="me1234"
+			modal-width="600px"
+			modal-height="100%"
+			modal-color="#333">
+			Window test.1
+		</button>
+		<button
+			actions="state, openModal"
+			modal-src="render.html"
+			state-array="module_activity"
+			state-object="5cd910dd30f02f16b3385821"
+			state_to="me1234"
+			modal-height="100%"
+			modal-color="red"
+			modal-x="20"
+			modal-y="40">
+			Window test.2
+		</button>
+		<!--Page-->
+		<button>
+			<a
+				href="render.html"
+				target=""
+				state-array="module_activity"
+				state-object="5d8aa1cfa37aee309596d6c6"
+				state_to="me1234"
+				>Page test.1.html
+				<div
+					state_to="me12345"
+					state-array="modules"
+					state-object="5d8aa2fca37aee309596d6c8"></div>
+			</a>
+		</button>
+		----
+		<button>
+			<a
+				href="CoCreate-kanban/simple-test.html"
+				state-array="module_activity"
+				state-key="stage"
+				state_to="stage"
+				>Fetch name</a
+			>
+		</button>
 
-        <button>
-            <a
-                href="CoCreate-kanban/kanban.html"
-                state-array="module_activity"
-                state-filter-value="5e6d79f9d8cdbe53927a0443"
-                state-filter-key
-                state_to="fetch_value"
-                >Simple Test</a
-            >
-        </button>
+		<button>
+			<a
+				href="CoCreate-kanban/kanban.html"
+				state-array="module_activity"
+				state-filter-value="5e6d79f9d8cdbe53927a0443"
+				state-filter-query-key
+				state_to="fetch_value"
+				>Simple Test</a
+			>
+		</button>
 
-        <button>
-            <a
-                href="https://server.cocreate.app/CoCreate-attributes/CoCreate-attibutes.html"
-                target="_blank"
-                state-array="modules"
-                state-object="5ebc16fc8917bc59483a7e3b"
-                state_to="1234"
-                >empty target</a
-            >
-        </button>
+		<button>
+			<a
+				href="https://server.cocreate.app/CoCreate-attributes/CoCreate-attibutes.html"
+				target="_blank"
+				state-array="modules"
+				state-object="5ebc16fc8917bc59483a7e3b"
+				state_to="1234"
+				>empty target</a
+			>
+		</button>
 
-        <button>
-            <a
-                href="CoCreate-attributes/CoCreate-attibutes.html"
-                actions="01, 02"
-                target="_blank"
-                state-array="modules"
-                state-object="5ebc16fc8917bc59483a7e3b"
-                state_to="1234"
-                >_blank</a
-            >
-        </button>
-        <button>
-            <a
-                href="CoCreate-attributes/CoCreate-attibutes.html"
-                target="_blank"
-                state-array="modules"
-                state-object="5d8aa2fca37aee309596d6c8"
-                state_to="1234"
-                >_window</a
-            >
-        </button>
-        <button>
-            <a
-                href="target.html"
-                target="_self"
-                state-array="modules"
-                state-object="5d8aa2fca37aee309596d6c8"
-                state_to="me1234"
-                >_self</a
-            >
-        </button>
-        ----
-        <button>
-            <a
-                href="html_block.html"
-                state-array="modules"
-                state-object="5cf995e8ac959a2bd93356fb"
-                state_to="me1234"
-                >Page HTML BLOCK</a
-            >
-        </button>
-        <button>
-            <a
-                actions="state, openModal"
-                modal-src="html_block.html"
-                state-array="modules"
-                state-object="5cf995e8ac959a2bd93356fb"
-                state_to="me1234"
-                >Modal HTML BLOCK</a
-            >
-        </button>
+		<button>
+			<a
+				href="CoCreate-attributes/CoCreate-attibutes.html"
+				actions="01, 02"
+				target="_blank"
+				state-array="modules"
+				state-object="5ebc16fc8917bc59483a7e3b"
+				state_to="1234"
+				>_blank</a
+			>
+		</button>
+		<button>
+			<a
+				href="CoCreate-attributes/CoCreate-attibutes.html"
+				target="_blank"
+				state-array="modules"
+				state-object="5d8aa2fca37aee309596d6c8"
+				state_to="1234"
+				>_window</a
+			>
+		</button>
+		<button>
+			<a
+				href="target.html"
+				target="_self"
+				state-array="modules"
+				state-object="5d8aa2fca37aee309596d6c8"
+				state_to="me1234"
+				>_self</a
+			>
+		</button>
+		----
+		<button>
+			<a
+				href="html_block.html"
+				state-array="modules"
+				state-object="5cf995e8ac959a2bd93356fb"
+				state_to="me1234"
+				>Page HTML BLOCK</a
+			>
+		</button>
+		<button>
+			<a
+				actions="state, openModal"
+				modal-src="html_block.html"
+				state-array="modules"
+				state-object="5cf995e8ac959a2bd93356fb"
+				state_to="me1234"
+				>Modal HTML BLOCK</a
+			>
+		</button>
 
-        <button>
-            <a
-                href="CoCreate-builder/index.html"
-                state-array="test1_array"
-                state_to="me1234"
-                >test page builder.html</a
-            >
-        </button>
-        <button>
-            <a
-                actions="state, openModal"
-                modal-src="builder.html"
-                state-array="modules"
-                state-object="5cf995e8ac959a2bd93356fb"
-                state_to="me1234"
-                >modal builder.html</a
-            >
-        </button>
+		<button>
+			<a
+				href="CoCreate-builder/index.html"
+				state-array="test1_array"
+				state_to="me1234"
+				>test page builder.html</a
+			>
+		</button>
+		<button>
+			<a
+				actions="state, openModal"
+				modal-src="builder.html"
+				state-array="modules"
+				state-object="5cf995e8ac959a2bd93356fb"
+				state_to="me1234"
+				>modal builder.html</a
+			>
+		</button>
 
-        <button>
-            <a
-                actions="state, openModal"
-                modal-src="module_datatable.html"
-                state-array="modules"
-                state-object="5cf995e8ac959a2bd93356fb"
-                state_to="me1234"
-                >modal datatable</a
-            >
-        </button>
+		<button>
+			<a
+				actions="state, openModal"
+				modal-src="module_datatable.html"
+				state-array="modules"
+				state-object="5cf995e8ac959a2bd93356fb"
+				state_to="me1234"
+				>modal datatable</a
+			>
+		</button>
 
-        <button>
-            <a
-                actions="state, openModal"
-                modal-src="index.html"
-                state_to="me1234"
-                >index.html</a
-            >
-        </button>
+		<button>
+			<a
+				actions="state, openModal"
+				modal-src="index.html"
+				state_to="me1234"
+				>index.html</a
+			>
+		</button>
 
-        <div id="modal-viewport"></div>
+		<div id="modal-viewport"></div>
 
-        <!--<script src="../dist/CoCreate-state.js"></script>-->
-        <script src="https://CoCreate.app/dist/CoCreate.js"></script>
-    </body>
+		<!--<script src="../dist/CoCreate-state.js"></script>-->
+		<script src="https://CoCreate.app/dist/CoCreate.js"></script>
+	</body>
 </html>
