@@ -1,3 +1,10 @@
+## [1.24.1](https://github.com/CoCreate-app/CoCreate-state/compare/v1.24.0...v1.24.1) (2025-01-18)
+
+
+### Bug Fixes
+
+* filter-query-key ([f3f4781](https://github.com/CoCreate-app/CoCreate-state/commit/f3f4781e679696d19b935ff18e8c35ed947b9e56))
+
 # [1.24.0](https://github.com/CoCreate-app/CoCreate-state/compare/v1.23.0...v1.24.0) (2024-12-14)
 
 
