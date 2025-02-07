@@ -1,6 +1,6 @@
 import "@cocreate/element-prototype";
-import observer from "@cocreate/observer";
-import action from "@cocreate/actions";
+import Observer from "@cocreate/observer";
+import Action from "@cocreate/actions";
 import uid from "@cocreate/uuid";
 import localStorage from "@cocreate/local-storage";
 
@@ -8,7 +8,7 @@ function init() {
 	let elements = document.querySelectorAll("[state_id]");
 	initElements(elements);
 	window.addEventListener("storage", function (e) {
-		if (e.key == "statedAttributes") {
+		if (e.key == "state") {
 			elements = document.querySelectorAll(
 				'[state_id]:not([state-onstoragechange="false"])'
 			);
@@ -32,7 +32,7 @@ function initElement(element) {
 	let state_id = element.getAttribute("state_id");
 	if (!state_id) return;
 
-	let statedAttributes = localStorage.getItem("statedAttributes");
+	let statedAttributes = localStorage.getItem("state");
 
 	if (!statedAttributes || statedAttributes.length == 0) return;
 	statedAttributes = JSON.parse(statedAttributes);
@@ -104,17 +104,14 @@ async function _setAttributeValue(element, attribute, value, isOverwrite) {
 async function stateAttributes(element) {
 	let statedAttributes = {};
 	try {
-		const storedAttributes = localStorage.getItem("statedAttributes");
+		const storedAttributes = localStorage.getItem("state");
 		if (storedAttributes) {
 			statedAttributes = JSON.parse(storedAttributes);
 		}
 	} catch (error) {
-		console.error(
-			"Failed to parse statedAttributes from localStorage:",
-			error
-		);
-		// Optionally reset `statedAttributes` in localStorage to ensure valid data:
-		localStorage.setItem("statedAttributes", JSON.stringify({}));
+		console.error("Failed to parse state from localStorage:", error);
+		// Optionally reset `state` in localStorage to ensure valid data:
+		localStorage.setItem("state", JSON.stringify({}));
 	}
 	let elements = [];
 
@@ -159,10 +156,9 @@ async function stateAttributes(element) {
 		);
 	}
 
-	if (!changeState)
-		localStorage.setItem("statedAttributes", statedAttributes);
+	if (!changeState) localStorage.setItem("state", statedAttributes);
 
-	document.dispatchEvent(
+	element.dispatchEvent(
 		new CustomEvent("stateEnd", {
 			detail: {}
 		})
@@ -205,14 +201,14 @@ function _getStateId(attrValues, state_to) {
 
 window.onload = function () {
 	if (!history.length) {
-		const statedAttributes = localStorage.getItem("statedAttributes") || "";
+		const statedAttributes = localStorage.getItem("state") || "";
 		history.replaceState(
 			{ statedAttributes, url: location.href, title: document.title },
 			document.title,
 			location.href
 		);
 	} else if (!history.state || history.state.url !== location.href) {
-		const statedAttributes = localStorage.getItem("statedAttributes") || "";
+		const statedAttributes = localStorage.getItem("state") || "";
 		history.pushState(
 			{ statedAttributes, url: location.href, title: document.title },
 			document.title,
@@ -224,10 +220,7 @@ window.onload = function () {
 window.addEventListener("popstate", function (event) {
 	if (event.state) {
 		if (event.state.statedAttributes) {
-			localStorage.setItem(
-				"statedAttributes",
-				event.state.statedAttributes
-			);
+			localStorage.setItem("state", event.state.statedAttributes);
 			let elements = document.querySelectorAll("[state_id]");
 			initElements(elements);
 		}
@@ -243,7 +236,7 @@ window.addEventListener("popstate", function (event) {
 	}
 });
 
-observer.init({
+Observer.init({
 	name: "CoCreateState",
 	observe: ["addedNodes"],
 	selector: "[state_id]",
@@ -252,11 +245,11 @@ observer.init({
 	}
 });
 
-action.init({
+Action.init({
 	name: "state",
 	endEvent: "stateEnd",
-	callback: (data) => {
-		stateAttributes(data.element);
+	callback: (action) => {
+		stateAttributes(action.element);
 	}
 });
 
