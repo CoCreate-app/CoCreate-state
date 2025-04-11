@@ -1,3 +1,11 @@
+## [1.24.2](https://github.com/CoCreate-app/CoCreate-state/compare/v1.24.1...v1.24.2) (2025-04-11)
+
+
+### Bug Fixes
+
+* renamed statedAttributes to state in local storage. ([610f591](https://github.com/CoCreate-app/CoCreate-state/commit/610f5916069ee773ee4bc020430892c869088d0b))
+* update observer observe param to type and and attributeName to attributeFilter ([42d8a89](https://github.com/CoCreate-app/CoCreate-state/commit/42d8a89ce2b32ee5d17b8a1498e40bd4503416a9))
+
 ## [1.24.1](https://github.com/CoCreate-app/CoCreate-state/compare/v1.24.0...v1.24.1) (2025-01-18)
 
 
