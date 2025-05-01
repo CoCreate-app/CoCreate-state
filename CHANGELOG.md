@@ -1,3 +1,10 @@
+## [1.24.4](https://github.com/CoCreate-app/CoCreate-state/compare/v1.24.3...v1.24.4) (2025-05-01)
+
+
+### Bug Fixes
+
+* update [@cocreate](https://github.com/cocreate) dependencies ([3ae5d59](https://github.com/CoCreate-app/CoCreate-state/commit/3ae5d59ad59d51fdf10c767a0fcb358e7c9064b2))
+
 ## [1.24.3](https://github.com/CoCreate-app/CoCreate-state/compare/v1.24.2...v1.24.3) (2025-04-30)
 
 
