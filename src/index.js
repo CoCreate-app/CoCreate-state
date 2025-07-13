@@ -96,8 +96,19 @@ async function _setAttributeValue(element, attribute, value, isOverwrite) {
 				(element.hasAttribute("value") && !(await element.getValue()))
 			)
 				element.setValue(value);
-		} else if (element.hasAttribute(attribute) && (value || value === ""))
+		} else if (element.hasAttribute(attribute) && (value || value === "")) {
 			element.setAttribute(attribute, value);
+		} else if (attribute.startsWith("$")) {
+			// Handle using operators.js
+			const prop = attribute.substring(1);
+			if (element[prop]) {
+				if (typeof element[prop] === "function") {
+					element[prop](value);
+				} else {
+					element[prop] = value;
+				}
+			}
+		}
 	}
 }
 
