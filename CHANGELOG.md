@@ -1,3 +1,10 @@
+## [1.24.5](https://github.com/CoCreate-app/CoCreate-state/compare/v1.24.4...v1.24.5) (2025-09-07)
+
+
+### Bug Fixes
+
+* enhance attribute handling for elements with operator prefix ([9838a6e](https://github.com/CoCreate-app/CoCreate-state/commit/9838a6eb25dbe2c482d6c7e730039e175a2a1fc0))
+
 ## [1.24.4](https://github.com/CoCreate-app/CoCreate-state/compare/v1.24.3...v1.24.4) (2025-05-01)
 
 
