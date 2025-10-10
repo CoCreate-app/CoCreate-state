@@ -126,14 +126,14 @@ async function stateAttributes(element) {
 	}
 	let elements = [];
 
-	let form = element.closest("form");
-	if (form) {
-		elements = form.querySelectorAll("[state_to]");
-	} else {
-		if (element.hasAttribute("state_to")) elements.push(element);
-		let nestedElements = element.querySelectorAll("[state_to]");
-		elements.push(...nestedElements);
-	}
+	// let form = element.closest("form");
+	// if (form) {
+	// 	elements = form.querySelectorAll("[state_to]");
+	// } else {
+	if (element.hasAttribute("state_to")) elements.push(element);
+	let nestedElements = element.querySelectorAll("[state_to]");
+	elements.push(...nestedElements);
+	// }
 
 	let changeState = false;
 	for (let i = 0; i < elements.length; i++) {
