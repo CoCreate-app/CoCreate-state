@@ -133,6 +133,13 @@ async function stateAttributes(element) {
 	if (element.hasAttribute("state_to")) elements.push(element);
 	let nestedElements = element.querySelectorAll("[state_to]");
 	elements.push(...nestedElements);
+	let current = element;
+	while (current) {
+		if (current.hasAttribute("state_to") && !elements.includes(current)) {
+			elements.push(current);
+		}
+		current = current.parentElement;
+	}
 	// }
 
 	let changeState = false;
@@ -187,7 +194,7 @@ async function _getAttributeValues(element) {
 				});
 			else if (attribute.name == "state-value" && !attribute.value)
 				Object.assign(attributeValues, {
-					value: await element.getvalue()
+					value: await element.getValue()
 				});
 			else
 				Object.assign(attributeValues, {
@@ -200,7 +207,7 @@ async function _getAttributeValues(element) {
 		!element.hasAttribute("state-value") &&
 		element.getvalue
 	)
-		Object.assign(attributeValues, { value: await element.getvalue() });
+		Object.assign(attributeValues, { value: await element.getValue() });
 
 	return attributeValues;
 }
