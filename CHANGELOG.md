@@ -1,3 +1,10 @@
+## [1.24.6](https://github.com/CoCreate-app/CoCreate-state/compare/v1.24.5...v1.24.6) (2025-11-16)
+
+
+### Bug Fixes
+
+* correct method name for retrieving element value and enhance state attribute handling ([bda5c5a](https://github.com/CoCreate-app/CoCreate-state/commit/bda5c5a2ed26215b824b75052e4cf19f5f3c16b3))
+
 ## [1.24.5](https://github.com/CoCreate-app/CoCreate-state/compare/v1.24.4...v1.24.5) (2025-09-07)
 
 
