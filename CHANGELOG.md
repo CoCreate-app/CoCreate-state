@@ -1,3 +1,10 @@
+## [1.24.7](https://github.com/CoCreate-app/CoCreate-state/compare/v1.24.6...v1.24.7) (2026-02-04)
+
+
+### Bug Fixes
+
+* update worklow ([7efc914](https://github.com/CoCreate-app/CoCreate-state/commit/7efc914ab3fec6225d2259e9aecbaa4a051e524f))
+
 ## [1.24.6](https://github.com/CoCreate-app/CoCreate-state/compare/v1.24.5...v1.24.6) (2025-11-16)
 
 
