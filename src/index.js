@@ -5,18 +5,18 @@ import uid from "@cocreate/uuid";
 import localStorage from "@cocreate/local-storage";
 
 function init() {
-	let elements = document.querySelectorAll("[state_id]");
+	let elements = document.querySelectorAll("[state-id]");
 	initElements(elements);
 	window.addEventListener("storage", function (e) {
 		if (e.key == "state") {
 			elements = document.querySelectorAll(
-				'[state_id]:not([state-onstoragechange="false"])'
+				'[state-id]:not([state-onstoragechange="false"])'
 			);
 			initElements(elements);
 		}
 	});
 	document.addEventListener("click", function (e) {
-		const target = e.target.closest("[state_to]");
+		const target = e.target.closest("[state-to]");
 		if (target) {
 			if (target.closest('[actions*="state"]')) return;
 			stateAttributes(target);
@@ -29,7 +29,7 @@ function initElements(elements) {
 }
 
 function initElement(element) {
-	let state_id = element.getAttribute("state_id");
+	let state_id = element.getAttribute("state-id");
 	if (!state_id) return;
 
 	let statedAttributes = localStorage.getItem("state");
@@ -61,27 +61,6 @@ function _setAttributeValues(el, attrValues) {
 
 	for (const key of Object.keys(attrValues)) {
 		_setAttributeValue(el, key, attrValues[key], isOverwrite);
-		_setAttributeValue(el, `state-${key}`, attrValues[key], isOverwrite);
-		if (key == "array" || key == "object" || key == "name") {
-			_setAttributeValue(
-				el,
-				`fetch-${key}`,
-				attrValues[key],
-				isOverwrite
-			);
-			_setAttributeValue(
-				el,
-				`state-fetch-${key}`,
-				attrValues[key],
-				isOverwrite
-			);
-		}
-		if (key == "template") {
-			_setAttributeValue(el, "template_id", attrValues[key], isOverwrite);
-		}
-		if (key == "template_id") {
-			_setAttributeValue(el, "template", attrValues[key], isOverwrite);
-		}
 	}
 }
 
@@ -130,12 +109,12 @@ async function stateAttributes(element) {
 	// if (form) {
 	// 	elements = form.querySelectorAll("[state_to]");
 	// } else {
-	if (element.hasAttribute("state_to")) elements.push(element);
-	let nestedElements = element.querySelectorAll("[state_to]");
+	if (element.hasAttribute("state-to")) elements.push(element);
+	let nestedElements = element.querySelectorAll("[state-to]");
 	elements.push(...nestedElements);
 	let current = element;
 	while (current) {
-		if (current.hasAttribute("state_to") && !elements.includes(current)) {
+		if (current.hasAttribute("state-to") && !elements.includes(current)) {
 			elements.push(current);
 		}
 		current = current.parentElement;
@@ -158,7 +137,7 @@ async function stateAttributes(element) {
 			break;
 		}
 
-		let state_to = elements[i].getAttribute("state_to");
+		let state_to = elements[i].getAttribute("state-to");
 		Object.assign(statedAttributes, { [`${state_to}`]: attrValues });
 		_getStateId(attrValues, state_to);
 	}
@@ -187,25 +166,21 @@ async function _getAttributeValues(element) {
 	let attributeValues = {};
 	let attributes = element.attributes;
 	for (let attribute of attributes) {
-		if (attribute.name.startsWith("state-")) {
-			if (attribute.value == "$uid")
-				Object.assign(attributeValues, {
-					[`${attribute.name.substring(5)}`]: uid.generate(6)
-				});
-			else if (attribute.name == "state-value" && !attribute.value)
-				Object.assign(attributeValues, {
-					value: await element.getValue()
-				});
-			else
-				Object.assign(attributeValues, {
-					[`${attribute.name.substring(6)}`]: attribute.value
-				});
+		if (attribute.name.startsWith("state.")) {
+			const key = attribute.name.slice(6);
+			if (attribute.value == "$uid") {
+				Object.assign(attributeValues, { [key]: uid.generate(6) });
+			} else if (key === "value" && !attribute.value) {
+				Object.assign(attributeValues, { value: await element.getValue() });
+			} else {
+				Object.assign(attributeValues, { [key]: attribute.value });
+			}
 		}
 	}
 	if (
 		element.value !== undefined &&
-		!element.hasAttribute("state-value") &&
-		element.getvalue
+		!element.hasAttribute("state.value") &&
+		element.getValue
 	)
 		Object.assign(attributeValues, { value: await element.getValue() });
 
@@ -213,7 +188,7 @@ async function _getAttributeValues(element) {
 }
 
 function _getStateId(attrValues, state_to) {
-	const elements = document.querySelectorAll(`[state_id="${state_to}"]`);
+	const elements = document.querySelectorAll(`[state-id="${state_to}"]`);
 	for (let element of elements) _setAttributeValues(element, attrValues);
 }
 
@@ -239,7 +214,7 @@ window.addEventListener("popstate", function (event) {
 	if (event.state) {
 		if (event.state.statedAttributes) {
 			localStorage.setItem("state", event.state.statedAttributes);
-			let elements = document.querySelectorAll("[state_id]");
+			let elements = document.querySelectorAll("[state-id]");
 			initElements(elements);
 		}
 
@@ -257,7 +232,7 @@ window.addEventListener("popstate", function (event) {
 Observer.init({
 	name: "CoCreateState",
 	types: ["addedNodes"],
-	selector: "[state_id]",
+	selector: "[state-id]",
 	callback: function (mutation) {
 		initElement(mutation.target);
 	}
