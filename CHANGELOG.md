@@ -1,3 +1,10 @@
+## [1.24.8](https://github.com/CoCreate-app/CoCreate-state/compare/v1.24.7...v1.24.8) (2026-02-15)
+
+
+### Bug Fixes
+
+* update attribute selectors from "state_id" to "state-id" for consistency ([90c0bd9](https://github.com/CoCreate-app/CoCreate-state/commit/90c0bd9fee44553b04a3b94075c65b86173a7401))
+
 ## [1.24.7](https://github.com/CoCreate-app/CoCreate-state/compare/v1.24.6...v1.24.7) (2026-02-04)
 
 
