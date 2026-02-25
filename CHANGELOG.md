@@ -1,3 +1,10 @@
+## [1.24.9](https://github.com/CoCreate-app/CoCreate-state/compare/v1.24.8...v1.24.9) (2026-02-25)
+
+
+### Bug Fixes
+
+* Update logo image source in menu component ([aa18b61](https://github.com/CoCreate-app/CoCreate-state/commit/aa18b615d1753373dc1f710696f4c9dd11d957d6))
+
 ## [1.24.8](https://github.com/CoCreate-app/CoCreate-state/compare/v1.24.7...v1.24.8) (2026-02-15)
 
 
