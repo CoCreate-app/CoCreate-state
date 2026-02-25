@@ -173,7 +173,7 @@ async function _getAttributeValues(element) {
 			} else if (key === "value" && !attribute.value) {
 				Object.assign(attributeValues, { value: await element.getValue() });
 			} else {
-				Object.assign(attributeValues, { [key]: attribute.value });
+				Object.assign(attributeValues, { [key]: element.getAttribute(attribute.name) });
 			}
 		}
 	}
