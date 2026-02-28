@@ -1,3 +1,10 @@
+# [1.25.0](https://github.com/CoCreate-app/CoCreate-state/compare/v1.24.9...v1.25.0) (2026-02-28)
+
+
+### Features
+
+* state suports local and session storage ([fab140f](https://github.com/CoCreate-app/CoCreate-state/commit/fab140f9c660d55a0d3819c18bf99635f5e024f5))
+
 ## [1.24.9](https://github.com/CoCreate-app/CoCreate-state/compare/v1.24.8...v1.24.9) (2026-02-25)
 
 
