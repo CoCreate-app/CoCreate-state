@@ -1,3 +1,10 @@
+## [1.25.1](https://github.com/CoCreate-app/CoCreate-state/compare/v1.25.0...v1.25.1) (2026-03-05)
+
+
+### Bug Fixes
+
+* support adding classes via state attributes ([dfa50d2](https://github.com/CoCreate-app/CoCreate-state/commit/dfa50d29ac8b5c15ef384dfebd67dc8faad816f8))
+
 # [1.25.0](https://github.com/CoCreate-app/CoCreate-state/compare/v1.24.9...v1.25.0) (2026-02-28)
 
 
