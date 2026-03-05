@@ -89,6 +89,9 @@ async function _setAttributeValue(element, attribute, value, isOverwrite) {
                 (element.hasAttribute("value") && !(await element.getValue()))
             )
                 element.setValue(value);
+        } else if (attribute === "class" && value) {
+            const classes = String(value).split(/\s+/).filter(Boolean);
+            if (classes.length) element.classList.add(...classes);
         } else if (element.hasAttribute(attribute) && (value || value === "")) {
             element.setAttribute(attribute, value);
         } else if (attribute.startsWith("$")) {
